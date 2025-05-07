@@ -1,0 +1,48 @@
+@use '../../styles/vars.scss' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .title {
+    @media screen and (max-width: vars.$breakpoint-md) {
+      font-size: 2.25rem !important;
+      line-height: 2.625rem !important;
+    }
+  }
+
+  .diamond {
+    color: vars.$light-blue;
+    word-break: break-word;
+  }
+
+  .hacks {
+    color: vars.$orange;
+  }
+
+  .emphasis {
+    color: vars.$yellow;
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @media screen and (max-width: vars.$breakpoint-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .label {
+      color: vars.$orange;
+    }
+  }
+}

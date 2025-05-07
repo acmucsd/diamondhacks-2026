@@ -1,0 +1,17 @@
+@use '../../styles/vars.scss' as vars;
+
+.banner {
+  display: block;
+  position: fixed;
+  top: -10px;
+  right: 0;
+  z-index: 9999; /* Make sure it stays above other content */
+  padding: 10px; /* Optional spacing around the image */
+
+  @media screen and (max-width: vars.$breakpoint-navbar) {
+    left: 0;
+    right: auto;
+    width: 125px !important;
+    height: 125px !important;
+  }
+}

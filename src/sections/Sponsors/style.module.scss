@@ -1,0 +1,101 @@
+@use '@/styles/vars' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  position: relative;
+  padding-bottom: 37.5rem; // So the bottom diamond guy fits nicely
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    padding-bottom: 5rem;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.title {
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 2.25rem !important;
+    line-height: 2.625rem !important;
+  }
+}
+
+.sponsorLogos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsorLogo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  background-color: vars.$white;
+  padding: 1rem;
+}
+
+.button {
+  text-decoration: none;
+  background-color: vars.$dark-blue;
+  color: vars.$white;
+  padding: 10px 24px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.background {
+  position: absolute;
+  bottom: -10rem;
+  width: calc(100% + 2 * vars.$side-padding);
+  height: calc(100% + 17.5rem);
+  z-index: -1;
+  object-fit: cover;
+  object-position: bottom;
+
+  // Blend out the gradients into the background
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black min(10%, 5rem),
+    black 95rem,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 5rem, black 95rem, transparent);
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    transform: scale(0.7); // Scale down to fit mobile
+    width: calc((100% + 2 * vars.$side-padding-mobile) / 0.7);
+  }
+}
+
+.bottomText {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 1.25rem !important;
+    line-height: 1.5rem !important;
+  }
+}
+
+.buttonText {
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 1rem !important;
+    line-height: 1.25rem !important;
+  }
+}

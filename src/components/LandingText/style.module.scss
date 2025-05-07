@@ -1,0 +1,113 @@
+@use '../../styles/vars.scss' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.813rem;
+  position: relative;
+  z-index: 2;
+  align-self: flex-start;
+  margin-top: 10%;
+
+  .subheadingMobile {
+    display: none;
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    flex-direction: column;
+  }
+  @media screen and (max-width: vars.$breakpoint-md) {
+    .subheadingDesktop {
+      display: none;
+    }
+
+    .subheadingMobile {
+      display: flex;
+    }
+  }
+
+  .header {
+    background: linear-gradient(90deg, #a5e0fb 0%, #dff5ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media screen and (max-width: vars.$breakpoint-md) {
+      font-size: 2.75rem !important;
+    }
+  }
+
+  .gradient {
+    background: linear-gradient(
+      90deg,
+      #e981a0 0%,
+      #ff6f6f 16%,
+      #f9a857 32%,
+      #51c0c0 48%,
+      #62b0ff 64%,
+      #816dff 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+  }
+
+  .interestForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .subtitle {
+      @media screen and (max-width: vars.$breakpoint-md) {
+        font-size: 1rem !important;
+      }
+    }
+
+    .buttonContainer {
+      display: flex;
+      gap: 1rem;
+
+      .button {
+        font-family: inherit;
+        font-size: 1.313rem;
+        line-height: 1.625rem;
+        background-color: vars.$light-blue;
+        border-radius: 100px;
+        border-color: transparent;
+        padding: 10px 24px;
+        cursor: pointer;
+        color: vars.$darker-blue;
+        transition: opacity 0.2s cubic-bezier(0.2, 0, 0, 1);
+        text-decoration: none;
+
+        &[data-variant='secondary'] {
+          background-color: vars.$white;
+          color: vars.$black;
+        }
+
+        &:hover {
+          box-shadow:
+            0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+          opacity: 92%;
+        }
+        @media screen and (max-width: vars.$breakpoint-md) {
+          font-size: 0.85rem;
+          padding: 5px 12px;
+        }
+      }
+      @media screen and (max-width: vars.$breakpoint-lg) {
+        justify-content: center;
+      }
+    }
+  }
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    align-self: center;
+    margin-top: unset;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 90%;
+    text-align: center;
+    flex-shrink: 0; // Prevent shrinking in flexbox
+    min-height: fit-content; // Ensure it maintains its content height
+  }
+}
