@@ -10,10 +10,10 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
   return (
     <div className={`${className} ${styles.container}`}>
       <Typography variant="title/small" className={styles.subheadingDesktop}>
-        April 5–6, 2025 • hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
+        April 4–5, 2026 • hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
       </Typography>
       <Typography variant="title/small" className={styles.subheadingMobile}>
-        <span>April 5–6, 2025</span>
+        <span>April 4–5, 2026</span>
         <span>
           Hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
         </span>
@@ -23,15 +23,15 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
       </Typography>
       <div className={styles.interestForm}>
         <Typography variant="title/small" className={styles.subtitle}>
-          Interested in joining? Applications are now open!
+          Interested in joining? Fill out the interest form!
         </Typography>
         <div className={styles.buttonContainer}>
           <Link
-            href="https://portal.diamondhacks.acmucsd.com/"
+            href="https://acmurl.com/diamondhacks26-interest"
             target="_blank"
             className={styles.button}
           >
-            Apply Now
+            Interest Form
           </Link>
           <Link
             href="mailto:hackathon@acmucsd.org"
@@ -39,13 +39,6 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
             data-variant="secondary"
           >
             Sponsor Us
-          </Link>
-          <Link
-            href="http://acmurl.com/diamondhacks-volunteer-interest"
-            className={styles.button}
-            data-variant="secondary"
-          >
-            Volunteer
           </Link>
         </div>
       </div>

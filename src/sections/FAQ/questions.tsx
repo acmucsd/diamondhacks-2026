@@ -8,16 +8,6 @@ export interface Question {
 
 export const QUESTIONS: Question[] = [
   {
-    question: 'How can I register for DiamondHacks?',
-    answer: (
-      <>
-        Create an account and submit your application on the{' '}
-        <Link href="https://portal.diamondhacks.acmucsd.com/">DiamondHacks Portal</Link> by February
-        28, 2025!
-      </>
-    ),
-  },
-  {
     question: 'What is a hackathon?',
     answer:
       'A hackathon is an event where hackers come together to collaborate, create, and develop projects within a set timeframe (usually 24–48 hours). Participants form teams to brainstorm ideas, write code, and build solutions, with a focus on innovation and creativity.',

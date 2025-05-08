@@ -10,7 +10,7 @@ const StatsDescription: React.FC = () => {
       </Typography>
       <div className={styles.statBox}>
         <Typography variant="display/heavy/small">
-          <span className={styles.statNumber1}>70+</span>
+          <span className={styles.statNumber1}>160+</span>
         </Typography>
         <Typography className={styles.info} variant="body/medium">
           projects
@@ -18,7 +18,7 @@ const StatsDescription: React.FC = () => {
       </div>
       <div className={styles.statBox}>
         <Typography variant="display/heavy/small">
-          <span className={styles.statNumber2}>300+</span>
+          <span className={styles.statNumber2}>600+</span>
         </Typography>
         <Typography className={styles.info} variant="body/medium">
           attendees
@@ -26,7 +26,7 @@ const StatsDescription: React.FC = () => {
       </div>
       <div className={styles.statBox}>
         <Typography variant="display/heavy/small">
-          <span className={styles.statNumber3}>$2.6k+</span>
+          <span className={styles.statNumber3}>$5k+</span>
         </Typography>
         <Typography className={styles.info} variant="body/medium">
           in prizes

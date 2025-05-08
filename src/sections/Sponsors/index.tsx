@@ -10,7 +10,7 @@ const Sponsors: React.FC = () => {
     <section className={styles.container} id="sponsors">
       <div className={styles.content}>
         <Typography variant="display/heavy/small" className={styles.title}>
-          Thank you to our sponsors...
+          Thank you to our past sponsors...
         </Typography>
         <div className={styles.sponsorLogos}>
           {SPONSORS.map(sponsor => (
