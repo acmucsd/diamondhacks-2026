@@ -38,7 +38,7 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
             className={styles.button}
             data-variant="secondary"
           >
-            Sponsor Us
+            Sponsor us for 2026
           </Link>
         </div>
       </div>
