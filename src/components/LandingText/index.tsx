@@ -40,7 +40,7 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Sponsor us for 2026
+            Sponsor us
           </Link>
         </div>
       </div>
