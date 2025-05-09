@@ -34,11 +34,9 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
             Interest Form
           </Link>
           <Link
-            href="https://acmurl.com/diamondhacks26-interest"
+            href="mailto:hackathon@acmucsd.org"
             className={styles.button}
             data-variant="secondary"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Sponsor us
           </Link>
