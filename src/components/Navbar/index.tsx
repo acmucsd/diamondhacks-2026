@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { SwipeableDrawer } from '@mui/material';
 import MLHBanner from '../MLHBanner';
+import { ArrowDropDown } from '@mui/icons-material';
 
 interface LinkMetadata {
   name: string;
@@ -21,7 +22,10 @@ const links: LinkMetadata[] = [
   { name: 'Impact', href: '/#impact' },
   { name: 'FAQ', href: '/#faq' },
   { name: 'Sponsors', href: '/#sponsors' },
-  { name: 'Apply', href: 'https://portal.diamondhacks.acmucsd.com' },
+];
+
+const yearLinks: LinkMetadata[] = [
+  { name: '2025', href: 'https://2025.diamondhacks.acmucsd.com' },
   { name: '2024', href: 'https://2024.diamondhacks.acmucsd.com' },
 ];
 
@@ -33,6 +37,7 @@ export default function Navbar() {
   const [visible, setVisible] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const lastUpdate = useRef(0);
+  const [yearMenuOpen, setYearMenuOpen] = useState(false);
 
   const onLinkClick = (link: LinkMetadata) => {
     lastUpdate.current = Date.now();
@@ -101,6 +106,27 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+          <div className={styles.yearDropdown}>
+            <button className={styles.yearToggle} onClick={() => setYearMenuOpen(o => !o)}>
+              Archives
+              <ArrowDropDown />
+            </button>
+
+            {yearMenuOpen && (
+              <div className={styles.yearOptions}>
+                {yearLinks.map(link => (
+                  <Link
+                    href={link.href}
+                    className={styles.yearItem}
+                    key={link.name}
+                    target="_blank"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </Typography>
         <div className={styles.mobileIcons}>
           <div className={`${styles.menuIcon} ${mobileMenuOpen ? '' : styles.hidden}`}>
@@ -110,7 +136,6 @@ export default function Navbar() {
             <MenuIcon onClick={() => setMobileMenuOpen(true)} />
           </div>
         </div>
-        <MLHBanner />
       </div>
       <SwipeableDrawer
         anchor="top"
@@ -126,6 +151,11 @@ export default function Navbar() {
               onClick={() => onLinkClick(link)}
               key={link.name}
             >
+              {link.name}
+            </Link>
+          ))}
+          {yearLinks.map(link => (
+            <Link href={link.href} className={styles.link} key={link.name} target="_blank">
               {link.name}
             </Link>
           ))}
