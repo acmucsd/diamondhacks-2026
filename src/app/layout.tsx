@@ -7,7 +7,7 @@ import { DM_Sans } from 'next/font/google';
 const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'DiamondHacks 2025',
+  title: 'DiamondHacks 2026',
   description: "ACM at UCSD's annual hackathon",
 };
 
