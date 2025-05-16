@@ -137,6 +137,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      <MLHBanner />
       <SwipeableDrawer
         anchor="top"
         open={mobileMenuOpen}
