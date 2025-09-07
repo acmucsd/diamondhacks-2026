@@ -10,6 +10,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { SwipeableDrawer } from '@mui/material';
 import MLHBanner from '../MLHBanner';
 import { ArrowDropDown } from '@mui/icons-material';
+import DiamondHacksLogo from "@/public/assets/general-logo-community.png";
 
 interface LinkMetadata {
   name: string;
@@ -88,11 +89,11 @@ export default function Navbar() {
     <>
       <div className={`${styles.container} ${visible ? styles.visible : styles.hidden}`}>
         <div className={styles.logo}>
-          <Image src="/assets/acm-logo.png" alt="ACM Logo" width={48} height={48} />
+          <Image src="/assets/general-logo-community.png" alt="ACM Logo" width={48} height={48} />
           <Typography variant="body/large" className={styles.logoText}>
             <b>diamond</b>
             <br />
-            hacks
+            hacks 3.0
           </Typography>
         </div>
         <Typography variant="body/large" className={styles.desktopLinks}>
@@ -108,7 +109,7 @@ export default function Navbar() {
           ))}
           <div className={styles.yearDropdown}>
             <button className={styles.yearToggle} onClick={() => setYearMenuOpen(o => !o)}>
-              Archives
+              Archive
               <ArrowDropDown />
             </button>
 
@@ -137,7 +138,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <MLHBanner />
+      {/* <MLHBanner /> */}
       <SwipeableDrawer
         anchor="top"
         open={mobileMenuOpen}

@@ -45,14 +45,14 @@ const v2StandardSizes: Record<V2StandardStyle, Record<V2Size, string>> = {
 
 const v2StandardHeights: Record<V2StandardStyle, Record<V2Size, string>> = {
   title: {
-    large: '2.675rem',
+    large: '2.375rem',
     medium: '2.125rem',
     small: '1.875rem',
   },
   label: {
     large: '1.625rem',
     medium: '1.5rem',
-    small: '1.375rem',
+    small: '1.3125rem',
   },
   body: {
     large: '1.5rem',
@@ -75,7 +75,7 @@ const v2StandardSpacings: Partial<Record<V2StandardStyle, Partial<Record<V2Size,
 
 const v2StandardWeights: Record<V2StandardStyle, number> = {
   title: 400,
-  label: 400,
+  label: 500,
   body: 400,
 };
 

@@ -8,6 +8,7 @@ import Facebook from '../../../public/assets/facebook.svg';
 import DiamondPileLeft from '../../../public/assets/diamond-pile-left.png';
 import DiamondPileRight from '../../../public/assets/diamond-pile-right.png';
 import AcmLogo from '../../../public/assets/acm-logo.png';
+import DiamondHacksLogo from '../../../public/assets/general-logo-community.png';
 
 const Footer: React.FC = () => {
   return (

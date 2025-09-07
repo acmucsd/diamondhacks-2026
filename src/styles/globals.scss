@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  background: url('/assets/paper_mache.png');
   padding: 0 vars.$side-padding;
 
   @media screen and (max-width: vars.$breakpoint-md) {
