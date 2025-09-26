@@ -15,8 +15,6 @@
     height: 46.79881rem;
     margin: 1.54rem 1.26rem 1.24rem 1.52rem;
     flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
     background: radial-gradient(37.46% 37.46% at 71.81% 62.54%, #5c9a60 0%, #5c6269 100%);
     z-index: 2;
     position: relative;
@@ -58,12 +56,62 @@
     }
   }
 }
-
+.leftVector {
+  z-index: 4;
+  position: absolute;
+  left: 0;
+}
+.rightVector {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.brownCarpet {
+  position: absolute;
+  width: 48.875rem;
+  height: 17.9375rem;
+  flex-shrink: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #201606;
+}
+.carpet {
+  position: absolute;
+  right: 3.11rem;
+  bottom: 4.92rem;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.racoon {
+  position: absolute;
+  top: 9.41rem;
+  right: 0.61rem;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.banner1 {
+  position: absolute;
+  left: 15.37rem;
+  z-index: 3;
+  flex-shrink: 0;
+  top: 0;
+}
+.banner2 {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  flex-shrink: 0;
+  top: 0;
+}
 .statsContainer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   gap: 1rem;
   margin: 5rem 3.12rem 3.12rem 5rem;
   bottom: 0;
+  z-index: 4;
 }
 
 .overTheYears {

@@ -1,7 +1,7 @@
 import Room2 from '@/sections/Room2';
 import Hero from '@/sections/Hero';
 import Room1 from '@/sections/Room1';
-import FAQ from '@/sections/FAQ';
+import Room3 from '@/sections/Room3';
 import styles from './page.module.scss';
 import Sponsors from '@/sections/Sponsors';
 

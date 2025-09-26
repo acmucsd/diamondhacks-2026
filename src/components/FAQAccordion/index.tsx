@@ -7,7 +7,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import styles from './style.module.scss';
 import Typography from '../Typography';
-import { Question } from '@/sections/FAQ/questions';
+import { Question } from '@/sections/Room3/questions';
 
 interface FAQAccordionProps {
   data: Question[];
