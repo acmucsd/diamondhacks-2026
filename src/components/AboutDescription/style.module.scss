@@ -1,11 +1,25 @@
 @use '../../styles/vars.scss' as vars;
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap');
 
 .container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 2.375rem;
+  
+  margin: 6rem 5rem 0 5rem;
+  flex-shrink: 0;
+  z-index: 10;
   .title {
+    font-family: 'Jaini Purva';
+    font-weight: 400;
+    font-size: 3.4375rem;
+    line-height: 3rem;
+    letter-spacing: -0.01563rem;
+    min-width: 19.375rem;
+    font-style: normal;
+    width: auto;
     @media screen and (max-width: vars.$breakpoint-md) {
       font-size: 2.25rem !important;
       line-height: 2.625rem !important;
@@ -13,25 +27,27 @@
   }
 
   .diamond {
-    color: vars.$light-blue;
+    background: linear-gradient(90deg, #FFD13B 0%, #CA8300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     word-break: break-word;
   }
 
   .hacks {
-    color: vars.$orange;
-  }
-
-  .emphasis {
     color: vars.$yellow;
   }
 
+  .emphasis {
+    color: vars.$light-blue;
+  }
+
   .description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
     @media screen and (max-width: vars.$breakpoint-md) {
-      grid-template-columns: 1fr;
+      flex-direction: column;
     }
   }
 

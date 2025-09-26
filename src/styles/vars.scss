@@ -4,6 +4,7 @@ $blue: #9ecaff;
 $light-blue: #bfeafd;
 $dark-blue: #0061a3;
 $darker-blue: #003258;
+$teal: #182F8C;
 $red: #ff8e72;
 $orange: #f9a857;
 $yellow: #ecdf98;
@@ -16,8 +17,8 @@ $breakpoint-md: 870px; // Use this breakpoint for most mobile-first CSS designs
 $breakpoint-lg: 1024px;
 
 $breakpoint-navbar: 950px;
-
-$side-padding: 4rem;
+$background-border: linear-gradient(90deg, #E981A0 0%, #FF6F6F 16.15%, #F9A857 34.9%, #51C0C0 56.77%, #62B0FF 74.48%, #816DFF 100%);
+$side-padding: 5rem;
 $side-padding-mobile: 1rem;
 
 $card-bg: rgba(255, 255, 255, 0.05);

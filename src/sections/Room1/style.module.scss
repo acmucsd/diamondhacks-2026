@@ -1,9 +1,13 @@
 @use '../../styles/vars.scss' as vars;
 
 .container {
+  width: 61.89638rem;
+  height: 49.58488rem;
+  flex-shrink: 0;
+  background-color: #22272d;
   display: flex;
+  margin: auto;
   flex-direction: column;
-  gap: 6.25rem;
 
   .isDesktop {
     margin: 0 calc(-1 * vars.$side-padding);
@@ -27,4 +31,21 @@
       display: none;
     }
   }
+}
+
+.greyBackground {
+  // width: 100%;
+  height: calc(100% - 1.74rem);
+  margin: 0 1.74rem 0 1.74rem;
+  position: relative;
+  // bottom: 1.72rem;
+  flex-shrink: 0;
+  background: radial-gradient(33.86% 33.86% at 26.75% 67.13%, #ffaf8a 0%, #696f78 100%);
+}
+
+.tritonCarpet {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

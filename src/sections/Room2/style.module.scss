@@ -1,0 +1,88 @@
+@use '../../styles/vars.scss' as vars;
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap');
+
+.container {
+  width: 51.42975rem;
+  height: 49.58488rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px auto 10px auto;
+  background-color: #22272d;
+  .innerContainer {
+    width: 48.64363rem;
+    height: 46.79881rem;
+    margin: 1.54rem 1.26rem 1.24rem 1.52rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(37.46% 37.46% at 71.81% 62.54%, #5c9a60 0%, #5c6269 100%);
+    z-index: 2;
+    position: relative;
+  }
+
+  .diamond {
+    position: relative;
+    height: 896px;
+    width: 350px;
+  }
+
+  .slidingDiamondWrapper {
+    position: sticky;
+    top: -6rem;
+    z-index: 1;
+    pointer-events: none;
+    height: 400px; // So the diamond doesn't slide off the rope
+
+    .slidingDiamond {
+      position: absolute;
+      top: 0;
+      left: calc(-1 * vars.$side-padding);
+    }
+  }
+
+  .rope {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: calc(-1 * vars.$side-padding);
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    height: auto;
+
+    .diamond {
+      display: none;
+    }
+  }
+}
+
+.statsContainer {
+  position: absolute;
+  gap: 1rem;
+  margin: 5rem 3.12rem 3.12rem 5rem;
+  bottom: 0;
+}
+
+.overTheYears {
+  color: var(--White, #fff);
+  font-family: 'Jaini Purva';
+  font-size: 2.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem; /* 87.805% */
+  letter-spacing: -0.01563rem;
+}
+
+.projects {
+  color: #7bff80;
+}
+
+.attendees {
+  color: #7bff80;
+}
+.prizes {
+  color: #ffd13b;
+}

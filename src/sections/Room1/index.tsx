@@ -2,8 +2,10 @@ import AboutDescription from '@/components/AboutDescription';
 import Carousel from '@/components/Carousel';
 import ImagePicker from '@/components/ImagePicker';
 import styles from './style.module.scss';
+import SortingQuizSection from '@/components/SortingQuizSection';
+import TritonCarpet from '../../../public/assets/room1-triton.svg';
 
-const About: React.FC = () => {
+const Room1: React.FC = () => {
   const images: string[] = [
     '/assets/hackathon1.png',
     '/assets/hackathon2.png',
@@ -13,15 +15,15 @@ const About: React.FC = () => {
 
   return (
     <section className={styles.container} id="about">
-      <AboutDescription />
-      <div className={styles.isMobile}>
-        <ImagePicker images={images} />
+      <div className={styles.greyBackground}>
+        <TritonCarpet className={styles.tritonCarpet} />
+        <AboutDescription />
+        <SortingQuizSection />  
       </div>
-      <div className={styles.isDesktop}>
-        <Carousel images={images} />
-      </div>
+      
+      
     </section>
   );
 };
 
-export default About;
+export default Room1;

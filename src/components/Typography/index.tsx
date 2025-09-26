@@ -86,9 +86,9 @@ const v2WeightedSizes: Record<V2WeightedStyle, Record<V2Size, string>> = {
     small: '2.875rem',
   },
   headline: {
-    large: '2.625rem',
-    medium: '2.5625rem',
-    small: '2.25rem',
+    large: '2.5625rem',
+    medium: '2.25rem',
+    small: '2rem',
   },
 };
 
@@ -114,7 +114,7 @@ const v2WeightedSpacings: Record<V2WeightedStyle, Record<V2Size, string>> = {
   headline: {
     large: '-0.01563rem',
     medium: '-0.01563rem',
-    small: 'normal',
+    small: '-0.01563rem',
   },
 };
 
@@ -133,14 +133,14 @@ const v2WeightedWeights: Record<V2WeightedStyle, Record<V2Weight, Record<V2Size,
   },
   headline: {
     light: {
-      large: 400,
+      large: 300,
       medium: 400,
       small: 400,
     },
     heavy: {
       large: 600,
-      medium: 600,
-      small: 600,
+      medium: 400,
+      small: 400,
     },
   },
 };

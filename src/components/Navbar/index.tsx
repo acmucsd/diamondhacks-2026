@@ -10,7 +10,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { SwipeableDrawer } from '@mui/material';
 import MLHBanner from '../MLHBanner';
 import { ArrowDropDown } from '@mui/icons-material';
-import DiamondHacksLogo from "@/public/assets/general-logo-community.png";
+import DiamondHacksLogo from '@/public/assets/general-logo-community.png';
 
 interface LinkMetadata {
   name: string;
@@ -129,6 +129,14 @@ export default function Navbar() {
             )}
           </div>
         </Typography>
+        <Typography variant="label/medium" className={styles.apply}>
+          <div>
+            <Link href="https://discord.gg/diamondhacks" target="_blank" className={styles.ctaButton}>
+              Apply Now
+            </Link>
+          </div>
+        </Typography>
+
         <div className={styles.mobileIcons}>
           <div className={`${styles.menuIcon} ${mobileMenuOpen ? '' : styles.hidden}`}>
             <CloseIcon onClick={() => setMobileMenuOpen(false)} />
