@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Room1 /> 
       <Room2 />
-      <Sponsors />
+      <Room3 />
     </main>
   );
 }

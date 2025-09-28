@@ -13,20 +13,13 @@ import DiamondHacksLogo from '../../../public/assets/general-logo-community.png'
 const Footer: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Image src={DiamondPileLeft} alt="Pile of diamonds" className={styles.backgroundLeft} />
-      <Image src={DiamondPileRight} alt="Pile of diamonds" className={styles.backgroundRight} />
-      <div className={styles.links}>
-        <Link href="https://acmucsd.com/about">
-          <Typography variant="body/large">About Us</Typography>
-        </Link>
-        <Link href="https://acmucsd.com/">
+      <div className={styles.linksContainer}>
+        <Link href="https://acmucsd.com/" className={styles.links}>
           <Image src={AcmLogo} alt="ACM" width={144} height={144} />
-        </Link>
-        <Link href="https://acmucsd.com/#contact">
-          <Typography variant="body/large">Contact Us</Typography>
+          <span className={styles.acmTitle}>ACM</span>
+          <span className={styles.acmText}> at UCSD</span>
         </Link>
       </div>
-      <Typography variant="body/large">Made with ♡ by ACM at UC San Diego</Typography>
       <div className={styles.socials}>
         <Link href="https://www.acmurl.com/instagram/">
           <Instagram />
@@ -36,11 +29,6 @@ const Footer: React.FC = () => {
         </Link>
         <Link href="https://www.acmurl.com/facebook/">
           <Facebook />
-        </Link>
-      </div>
-      <div className={styles.links}>
-        <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md">
-          <Typography variant="body/large">MLH Code of Conduct</Typography>
         </Link>
       </div>
     </div>

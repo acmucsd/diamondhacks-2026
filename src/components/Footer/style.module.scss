@@ -1,12 +1,31 @@
 @use '@/styles/vars' as vars;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 .container {
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      #e981a0,
+      // pink
+      #f6d365,
+      // yellow
+      #a8e063,
+      // green
+      #38a3a5,
+      // teal
+      #3b82f6,
+      // blue
+      #9b5de5 // purple
+    )
+    1;
+  background: var(--Background, #10131b);
+
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-direction: row;
+ 
   justify-content: center;
   align-items: center;
-  padding: 8rem vars.$side-padding;
+  padding: 5rem 5rem;
   position: relative;
   margin: 0 calc(vars.$side-padding * -1);
 
@@ -46,19 +65,48 @@
   }
 }
 
+.linksContainer {
+  position: absolute;
+  top: 25%;
+  left: 7.5rem;
+}
 .links {
+  text-decoration: none;
+  color: vars.$white;
   display: flex;
-  gap: 6.5rem;
   align-items: center;
+  gap: 0.5rem;
+  text-align: left;
   margin-bottom: 2rem;
 
   a {
     text-decoration: none;
     color: vars.$white;
-
     img {
       filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
     }
+  }
+  .acmTitle {
+    text-decoration: none;
+    color: vars.$white;
+    margin: auto;
+    color: #fff;
+    font-family: 'DM Sans';
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .acmText {
+    text-decoration: none;
+    color: vars.$white;
+    margin: auto;
+    color: #fff;
+    font-family: 'DM Sans';
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
   @media screen and (max-width: vars.$breakpoint-md) {
@@ -72,6 +120,9 @@
 }
 
 .socials {
+  position: absolute;
+  top: 55%;
+  right: 7.5rem;
   display: flex;
   gap: 1rem;
   align-items: flex-start;

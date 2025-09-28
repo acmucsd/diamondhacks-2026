@@ -18,6 +18,15 @@ export const QUESTIONS: Question[] = [
       "No, hackers of any experience levels are welcome! We'll have workshops and mentors to help you get started, and beginners have the chance to win prizes specifically for first time hackers.",
   },
   {
+    question: 'Who can I reach out to for questions and concerns?',
+    answer: (
+      <>
+        Please reach out to <Link href="mailto:hackathon@acmucsd.org">hackathon@acmucsd.org</Link>{' '}
+        with any questions or concerns about DiamondHacks!
+      </>
+    ),
+  },
+  {
     question: 'Where will DiamondHacks be held?',
     answer:
       'DiamondHacks will be hosted at UC San Diego, in the Computer Science & Engineering Buildings, as well as Jacobs Hall.',
@@ -31,13 +40,5 @@ export const QUESTIONS: Question[] = [
       </>
     ),
   },
-  {
-    question: 'Who can I reach out to for questions and concerns?',
-    answer: (
-      <>
-        Please reach out to <Link href="mailto:hackathon@acmucsd.org">hackathon@acmucsd.org</Link>{' '}
-        with any questions or concerns about DiamondHacks!
-      </>
-    ),
-  },
+  
 ];
