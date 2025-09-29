@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  min-height: 60vh;
+  //min-height: 60vh;
   margin: 8rem calc(vars.$side-padding * -1) 0;
   overflow: visible;
 
@@ -18,10 +18,10 @@
 .sunGod {
   position: absolute;
   // top: 5.5rem; // offset from right edge; adjust a needed
-  width: 39.71569rem;
+  // width: 39.71569rem;
   // adjust size to match design
   right: 0;
-  max-width: 40vw;
+  // max-width: 40vw;
   height: auto;
   flex-shrink: 0;
   // must be less than navbar z-index if navbar should sit above it
@@ -31,7 +31,8 @@
 
 .roofWrapper {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,15 +41,17 @@
 }
 
 .roofTop {
+  max-width: 100%;  
+  // margin: auto;
+  // width: 100%;
+  position: relative;
   overflow: visible;
-  width: 72.5rem;
-  height: 37.042rem;
-  max-width: 85vw;
+  // max-width: 85vw;
   display: block;
   margin: auto;
   flex-shrink: 0;
   z-index: 11;
-  transform: translateX(-2rem); /* Shift slightly right to compensate */
+ // transform: translateX(-2rem); /* Shift slightly right to compensate */
 }
 .landingText {
   position: absolute;

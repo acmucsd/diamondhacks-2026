@@ -22,19 +22,19 @@ const Room2: React.FC = () => {
             <br /> we had ...
           </span>
           <div>
-            <Typography variant="display/light/large" className={styles.projects}>
+            <Typography variant="display/heavy/large" className={styles.projects}>
               160+
             </Typography>
             <Typography variant="body/large">projects</Typography>
           </div>
           <div>
-            <Typography variant="display/light/large" className={styles.attendees}>
+            <Typography variant="display/heavy/large" className={styles.attendees}>
               600+
             </Typography>
             <Typography variant="body/large">total attendees</Typography>
           </div>
           <div>
-            <Typography variant="display/light/large" className={styles.prizes}>
+            <Typography variant="display/heavy/large" className={styles.prizes}>
               $5000+
             </Typography>
             <Typography variant="body/large">in prizes</Typography>
