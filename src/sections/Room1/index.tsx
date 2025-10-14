@@ -18,10 +18,8 @@ const Room1: React.FC = () => {
       <div className={styles.greyBackground}>
         <TritonCarpet className={styles.tritonCarpet} />
         <AboutDescription />
-        <SortingQuizSection />  
+        <SortingQuizSection />
       </div>
-      
-      
     </section>
   );
 };

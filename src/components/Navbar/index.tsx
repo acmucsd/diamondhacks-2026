@@ -131,7 +131,11 @@ export default function Navbar() {
         </Typography>
         <Typography variant="label/medium" className={styles.apply}>
           <div>
-            <Link href="https://discord.gg/diamondhacks" target="_blank" className={styles.ctaButton}>
+            <Link
+              href="https://discord.gg/diamondhacks"
+              target="_blank"
+              className={styles.ctaButton}
+            >
               Apply Now
             </Link>
           </div>

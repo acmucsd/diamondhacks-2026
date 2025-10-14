@@ -7,9 +7,9 @@ import Typography from '@/components/Typography';
 import LeftVector from 'public/assets/Vector-87.svg';
 import RightVector from 'public/assets/Vector 89.svg';
 import Carpet from 'public/assets/carpet.svg';
-import Racoon from 'public/assets/racoon.png'
-import Banner1 from 'public/assets/banner.svg'
-import Banner2 from 'public/assets/banner2.svg'
+import Racoon from 'public/assets/racoon.png';
+import Banner1 from 'public/assets/banner.svg';
+import Banner2 from 'public/assets/banner2.svg';
 import Bookshelf from '@/components/Room2Shelf';
 const Room2: React.FC = () => {
   return (

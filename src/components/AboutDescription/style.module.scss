@@ -7,7 +7,7 @@
   align-items: flex-start;
   align-self: stretch;
   gap: 2.375rem;
-  
+
   margin: 6rem 5rem 0 5rem;
   flex-shrink: 0;
   z-index: 10;
@@ -27,7 +27,7 @@
   }
 
   .diamond {
-    background: linear-gradient(90deg, #FFD13B 0%, #CA8300 100%);
+    background: linear-gradient(90deg, #ffd13b 0%, #ca8300 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     word-break: break-word;

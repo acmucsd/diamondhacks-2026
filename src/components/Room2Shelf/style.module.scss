@@ -1,21 +1,21 @@
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .shelf {
-    position: absolute;
-    top: 9.86rem;
-    left: 26.5rem;
+  position: absolute;
+  top: 9.86rem;
+  left: 26.5rem;
 }
 .books {
-    position: absolute;
-    left: 28rem;
-    top: 4.87rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+  position: absolute;
+  left: 28rem;
+  top: 4.87rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 .book2 {
-    position: relative;
-    bottom: 0;
+  position: relative;
+  bottom: 0;
 }

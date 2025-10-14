@@ -33,7 +33,13 @@
   }
 
   .header {
-    background: linear-gradient(179deg, #A1D8FF 1.92%, #77BDEF 8.73%, #6DB5E8 48.87%, #B8E1FF 76.46%);
+    background: linear-gradient(
+      179deg,
+      #a1d8ff 1.92%,
+      #77bdef 8.73%,
+      #6db5e8 48.87%,
+      #b8e1ff 76.46%
+    );
 
     background-clip: text;
     -webkit-background-clip: text;
@@ -76,7 +82,6 @@
       gap: 0.75rem;
       margin: auto;
       .button {
-        
         font-family: inherit;
         font-size: 1.313rem;
         line-height: 1.625rem;

@@ -14,17 +14,13 @@ const Room3: React.FC = () => {
       <MainContainer className={styles.outerContainer} id="faq" />
       <div className={styles.innerContainer}>
         <InnerContainer className={styles.containerGraphic} />
-        <span className={styles.title}>
-          Frequently Asked Questions
-        </span>
+        <span className={styles.title}>Frequently Asked Questions</span>
         <Shelf className={styles.shelf} />
         <Image src={Cauldron} className={styles.cauldron} alt="cauldron" />
         <Steam className={styles.steam} />
         <FAQAccordion data={QUESTIONS} className={styles.faqContainer} />
       </div>
-    
     </div>
-    
   );
 };
 

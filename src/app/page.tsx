@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
-      <Room1 /> 
+      <Room1 />
       <Room2 />
       <Room3 />
     </main>
