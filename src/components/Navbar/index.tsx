@@ -31,7 +31,7 @@ const yearLinks: LinkMetadata[] = [
 ];
 
 const DEBOUNCE_MS = 150; // Prevent back-to-back updates within 150ms
-const MOBILE_BREAKPOINT = 950;
+const MOBILE_BREAKPOINT = 1000;
 
 export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -129,7 +129,7 @@ export default function Navbar() {
             )}
           </div>
         </Typography>
-        <Typography variant="label/medium" className={styles.apply}>
+        {/* <Typography variant="label/medium" className={styles.apply}>
           <div>
             <Link
               href="https://discord.gg/diamondhacks"
@@ -139,7 +139,7 @@ export default function Navbar() {
               Apply Now
             </Link>
           </div>
-        </Typography>
+        </Typography> */}
 
         <div className={styles.mobileIcons}>
           <div className={`${styles.menuIcon} ${mobileMenuOpen ? '' : styles.hidden}`}>
@@ -150,7 +150,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      {/* <MLHBanner /> */}
+      <MLHBanner />
       <SwipeableDrawer
         anchor="top"
         open={mobileMenuOpen}

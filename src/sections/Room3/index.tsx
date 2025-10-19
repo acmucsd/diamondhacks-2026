@@ -1,24 +1,23 @@
-import Typography from '@/components/Typography';
 import { QUESTIONS } from './questions';
 import styles from './style.module.scss';
-import Image from 'next/image';
 import FAQAccordion from '@/components/FAQAccordion';
-import MainContainer from '/public/assets/Rectangle 237.svg';
-import InnerContainer from '/public/assets/room 3 bkgd.svg';
+import Room3Background from '/public/assets/room 3 bkgd.svg';
 import Shelf from '/public/assets/Shelf.svg';
-import Cauldron from '/public/assets/Cauldron.png';
-import Steam from '/public/assets/steam.svg';
+import Cauldron from '/public/assets/cauldron-steaming.svg';
+import Typography from '@/components/Typography';
 const Room3: React.FC = () => {
   return (
     <div className={styles.container}>
-      <MainContainer className={styles.outerContainer} id="faq" />
-      <div className={styles.innerContainer}>
-        <InnerContainer className={styles.containerGraphic} />
-        <span className={styles.title}>Frequently Asked Questions</span>
+      <div className={styles.trapezoidClipPath} id="faq">
+        <Room3Background className={styles.room3Background} />
         <Shelf className={styles.shelf} />
-        <Image src={Cauldron} className={styles.cauldron} alt="cauldron" />
-        <Steam className={styles.steam} />
-        <FAQAccordion data={QUESTIONS} className={styles.faqContainer} />
+        <Cauldron className={styles.cauldron} />
+        <div className={styles.faqContent}>
+          <Typography variant="display/light/medium" className={styles.title}>
+            Frequently asked questions
+          </Typography>
+          <FAQAccordion data={QUESTIONS} className={styles.faqContainer} />
+        </div>
       </div>
     </div>
   );

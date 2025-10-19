@@ -1,81 +1,96 @@
 @use '../../styles/vars.scss' as vars;
-@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap');
 
 .title {
   color: var(--White, #fff);
-  font-family: 'Jaini Purva';
-  font-size: 2.5625rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.25rem; /* 87.805% */
-  letter-spacing: -0.01563rem;
-  position: absolute;
-  top: 4.98rem;
-  left: 8.5rem;
-  z-index: 3;
-  // margin-bottom: 2rem;
+  font-family: var(--font-jaini-purva);
 
   @media screen and (max-width: vars.$breakpoint-md) {
-    font-size: 2.25rem !important;
-    line-height: 2.625rem !important;
+    font-size: 2rem !important;
   }
 }
 
 .container {
-  width: 64.53188rem;
-  height: 49.58488rem;
+  width: 100%;
+  max-width: 1400px;
+  height: 50rem;
   position: relative;
   flex-shrink: 0;
-  margin: 0.64rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.outerContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+
+.trapezoidClipPath {
+  width: 88%;
   height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-.innerContainer {
-  width: 59.61856rem;
-  height: 45.29281rem;
-  margin: auto;
+  background-color: #22272d;
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 100%;
+  }
 }
-.containerGraphic {
+
+.room3Background {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(1.1) scaleY(0.95);
   width: 100%;
   height: 100%;
-  display: block;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    transform: translate(-50%, -50%) scaleX(0.9) scaleY(1.5);
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    transform: translate(-50%, -50%) scaleX(0.9) scaleY(2.7);
+  }
 }
+
 .shelf {
   position: absolute;
-  bottom: -0.88rem;
-  right: 4.88rem;
+  bottom: 1rem;
+  right: 10%;
   z-index: 2;
+  width: 30%;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 50%;
+    max-width: 300px;
+  }
 }
+
 .cauldron {
   position: absolute;
-  bottom: -1.88rem;
-  left: 23.6rem;
+  bottom: 1rem;
+  right: 30%;
   z-index: 2;
+  width: 25%;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 50%;
+    max-width: 300px;
+  }
 }
-.steam {
+
+.faqContent {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  align-items: flex-start;
   position: absolute;
-  bottom: 6.91rem;
-  left: 19.97rem;
-  z-index: 2;
-}
-.faqContainer {
+  top: 5rem;
+  gap: 1rem;
+  width: 65%;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    top: 1rem;
+  }
 }

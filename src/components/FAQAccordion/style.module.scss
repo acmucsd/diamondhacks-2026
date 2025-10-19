@@ -3,11 +3,12 @@
 .faqContainer {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 8rem;
-  left: 7rem;
-  z-index: 3;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    margin-left: -1rem;
+  }
 }
+
 .accordion {
   box-shadow: none;
   margin: 0 !important;
@@ -24,6 +25,10 @@
   //   border-bottom-right-radius: 0;
   //   border-bottom: 1px solid vars.$neutral;
   // }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    padding: 0.25rem 0;
+  }
 }
 
 .accordionRoot {
@@ -65,6 +70,10 @@
 
 .accordionQuestion {
   color: vars.$white;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 0.75rem !important;
+  }
 }
 
 .accordionAnswer {

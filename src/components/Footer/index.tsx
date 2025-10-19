@@ -5,21 +5,23 @@ import Image from 'next/image';
 import Instagram from '../../../public/assets/instagram.svg';
 import Discord from '../../../public/assets/discord.svg';
 import Facebook from '../../../public/assets/facebook.svg';
-import DiamondPileLeft from '../../../public/assets/diamond-pile-left.png';
-import DiamondPileRight from '../../../public/assets/diamond-pile-right.png';
 import AcmLogo from '../../../public/assets/acm-logo.png';
-import DiamondHacksLogo from '../../../public/assets/general-logo-community.png';
 
 const Footer: React.FC = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.linksContainer}>
-        <Link href="https://acmucsd.com/" className={styles.links}>
+      <div className={styles.links}>
+        <Link href="https://acmucsd.com/about">
+          <Typography variant="body/large">About Us</Typography>
+        </Link>
+        <Link href="https://acmucsd.com/">
           <Image src={AcmLogo} alt="ACM" width={144} height={144} />
-          <span className={styles.acmTitle}>ACM</span>
-          <span className={styles.acmText}> at UCSD</span>
+        </Link>
+        <Link href="https://acmucsd.com/#contact">
+          <Typography variant="body/large">Contact Us</Typography>
         </Link>
       </div>
+      <Typography variant="body/large">Made with ♡ by ACM at UC San Diego</Typography>
       <div className={styles.socials}>
         <Link href="https://www.acmurl.com/instagram/">
           <Instagram />
@@ -29,6 +31,11 @@ const Footer: React.FC = () => {
         </Link>
         <Link href="https://www.acmurl.com/facebook/">
           <Facebook />
+        </Link>
+      </div>
+      <div className={styles.links}>
+        <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md">
+          <Typography variant="body/large">MLH Code of Conduct</Typography>
         </Link>
       </div>
     </div>

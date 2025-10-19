@@ -1,27 +1,27 @@
 @use '../../styles/vars.scss' as vars;
-@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap');
 
 .container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  align-self: stretch;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
   gap: 2.375rem;
-
-  margin: 6rem 5rem 0 5rem;
-  flex-shrink: 0;
   z-index: 10;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
   .title {
-    font-family: 'Jaini Purva';
+    font-family: var(--font-jaini-purva);
     font-weight: 400;
     font-size: 3.4375rem;
     line-height: 3rem;
     letter-spacing: -0.01563rem;
-    min-width: 19.375rem;
-    font-style: normal;
-    width: auto;
+
     @media screen and (max-width: vars.$breakpoint-md) {
-      font-size: 2.25rem !important;
+      font-size: 2rem !important;
       line-height: 2.625rem !important;
     }
   }

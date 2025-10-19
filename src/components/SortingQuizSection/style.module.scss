@@ -1,43 +1,57 @@
+@use '../../styles/vars.scss' as vars;
+
 .container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  width: 32.9375rem;
   justify-content: center;
   align-items: flex-end;
-  gap: 1.5rem;
+  gap: 2.5rem;
   position: absolute;
   bottom: 6.25rem;
-  right: 5rem;
+  right: 3rem;
   z-index: 1000;
-  width: 32.9375rem;
-  // height: 19.375rem;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    bottom: 10%;
+    right: 10%;
+    gap: 0.5rem;
+  }
 }
 .textSpacing {
   display: flex;
   flex-direction: column;
 }
 .question {
-  color: var(--dmd-sys-base-colors-white, #fff);
+  color: vars.$white;
   text-align: right;
-  font-family: 'Jaini Purva';
+  font-family: var(--font-jaini-purva);
   font-size: 2.5625rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.25rem; /* 87.805% */
+  line-height: 2.25rem;
   letter-spacing: -0.01563rem;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    font-size: 1.5rem !important;
+  }
 }
+
 .highlight {
-  color: #ffd13b;
+  color: vars.$yellow;
 }
+
 .ctaButton {
   text-decoration: none;
-  display: flex;
   padding: 1rem 2rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  border-radius: 1.875rem;
+  border-radius: 0.95rem;
   background: var(--White, #fff);
   color: var(--black, #000);
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    font-size: 0.75rem !important;
+    padding: 0.5rem 1rem;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 0.5rem !important;
+    padding: 0.5rem 1rem;
+  }
 }
