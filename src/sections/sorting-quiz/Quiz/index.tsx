@@ -34,7 +34,7 @@ const Quiz: React.FC<QuizProps> = ({addScores, onComplete}) => {
   }
 
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <Typography variant="body/medium">Question {questionIndex+1} of {questions.length}</Typography>
       <Typography variant="label/large">{question}</Typography>
       <div className={styles.imageContainer}>
@@ -51,7 +51,7 @@ const Quiz: React.FC<QuizProps> = ({addScores, onComplete}) => {
         ))}
         <button type="submit" className={styles.submitButton}><Typography variant="body/medium">Select</Typography></button>
       </form>
-    </section>
+    </div>
   )
 }
 

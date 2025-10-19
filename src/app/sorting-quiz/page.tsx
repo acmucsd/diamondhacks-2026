@@ -1,8 +1,9 @@
-"use client"
+"use client";
+
+import { useState } from "react";
 import Landing from "@/sections/sorting-quiz/Landing";
 import Quiz from "@/sections/sorting-quiz/Quiz";
 import Result from "@/sections/sorting-quiz/Result";
-import { useState } from "react"
 
 enum Section {
   Landing,
