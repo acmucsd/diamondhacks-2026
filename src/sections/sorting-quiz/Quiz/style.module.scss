@@ -8,6 +8,18 @@
     margin-top: 8rem;
     text-align: center;
 
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 276px;
+
+        .image {
+            max-height: 100%;
+            overflow: visible;
+        }
+    }
+
     .form {
         width: 100%;
         display: flex;

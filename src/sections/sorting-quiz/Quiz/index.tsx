@@ -3,6 +3,7 @@ import questions from "../../../../public/assets/questions.json";
 import { Scores } from "@/app/sorting-quiz/page";
 import Typography from "@/components/Typography";
 import styles from "./style.module.scss";
+import QuizImage from "./images";
 
 interface QuizProps {
   addScores: (scores: Partial<Scores>) => void,
@@ -36,6 +37,9 @@ const Quiz: React.FC<QuizProps> = ({addScores, onComplete}) => {
     <section className={styles.container}>
       <Typography variant="body/medium">Question {questionIndex+1} of {questions.length}</Typography>
       <Typography variant="label/large">{question}</Typography>
+      <div className={styles.imageContainer}>
+        <QuizImage index={questionIndex} className={styles.image} />
+      </div>
       <form onSubmit={handleSubmit} className={styles.form}>
         {options.map((option, index) => (
           <>
