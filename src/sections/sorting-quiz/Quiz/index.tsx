@@ -1,6 +1,8 @@
 import { useState } from "react";
 import questions from "../../../../public/assets/questions.json";
 import { Scores } from "@/app/sorting-quiz/page";
+import Typography from "@/components/Typography";
+import styles from "./style.module.scss";
 
 interface QuizProps {
   addScores: (scores: Partial<Scores>) => void,
@@ -31,17 +33,19 @@ const Quiz: React.FC<QuizProps> = ({addScores, onComplete}) => {
   }
 
   return (
-    <section>
-      <p>Question {questionIndex+1} of {questions.length}</p>
-      <p>{question}</p>
-      <form onSubmit={handleSubmit}>
+    <section className={styles.container}>
+      <Typography variant="body/medium">Question {questionIndex+1} of {questions.length}</Typography>
+      <Typography variant="label/large">{question}</Typography>
+      <form onSubmit={handleSubmit} className={styles.form}>
         {options.map((option, index) => (
-          <label key={option.text}>
-            <input type="radio" name="question" value={index} checked={index === selectedOptionIndex} onChange={handleChange} />
-            {option.text}
-          </label>
+          <>
+            <input type="radio" name="question" value={index} checked={index === selectedOptionIndex} onChange={handleChange} id={option.text} />
+            <label key={option.text} htmlFor={option.text} className={styles.button}>
+              <Typography variant="body/medium">{option.text}</Typography>
+            </label>
+          </>
         ))}
-        <button type="submit">Select</button>
+        <button type="submit" className={styles.submitButton}><Typography variant="body/medium">Select</Typography></button>
       </form>
     </section>
   )
