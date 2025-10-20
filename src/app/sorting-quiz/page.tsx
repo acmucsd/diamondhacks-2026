@@ -4,6 +4,7 @@ import { useState } from "react";
 import Landing from "@/sections/sorting-quiz/Landing";
 import Quiz from "@/sections/sorting-quiz/Quiz";
 import Result from "@/sections/sorting-quiz/Result";
+import styles from './page.module.scss';
 
 enum Section {
   Landing,
@@ -53,7 +54,7 @@ export default function SortingQuiz() {
   }
 
   return (
-    <main>
+    <main className={styles.main}>
       {sectionElement}
     </main>
   );
