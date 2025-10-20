@@ -2,7 +2,6 @@ import Typography from '@/components/Typography';
 import styles from './style.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import HoldingDiamond from 'public/assets/holding-diamond.png';
 import { SPONSORS } from './sponsors';
 
 const Sponsors: React.FC = () => {
@@ -38,7 +37,6 @@ const Sponsors: React.FC = () => {
           </Typography>
         </Link>
       </div>
-      <Image src={HoldingDiamond} alt="Diamond illustration" className={styles.background} />
     </section>
   );
 };

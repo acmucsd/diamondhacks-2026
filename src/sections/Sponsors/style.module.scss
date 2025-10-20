@@ -7,7 +7,8 @@
   justify-content: flex-start;
   gap: 2rem;
   position: relative;
-  padding-bottom: 37.5rem; // So the bottom diamond guy fits nicely
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 
   @media screen and (max-width: vars.$breakpoint-md) {
     padding-bottom: 5rem;
@@ -79,7 +80,7 @@
   -webkit-mask-image: linear-gradient(to bottom, transparent, black 5rem, black 95rem, transparent);
 
   @media screen and (max-width: vars.$breakpoint-md) {
-    transform: scale(0.7); // Scale down to fit mobile
+    transform: scale(0.7);
     width: calc((100% + 2 * vars.$side-padding-mobile) / 0.7);
   }
 }

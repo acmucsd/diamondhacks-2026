@@ -1,0 +1,168 @@
+@use '../../styles/vars.scss' as vars;
+
+.container {
+  width: 70%;
+  max-width: 1000px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px auto 10px auto;
+  background-color: #22272d;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 90%;
+  }
+
+  .innerContainer {
+    width: 95%;
+    height: 46.79881rem;
+    margin: 1.54rem 1.26rem 1.24rem 1.52rem;
+    flex-shrink: 0;
+    background: radial-gradient(37.46% 37.46% at 71.81% 62.54%, #5c9a60 0%, #5c6269 100%);
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .diamond {
+    position: relative;
+    height: 896px;
+    width: 350px;
+  }
+
+  .slidingDiamondWrapper {
+    position: sticky;
+    top: -6rem;
+    z-index: 1;
+    pointer-events: none;
+    height: 400px; // So the diamond doesn't slide off the rope
+
+    .slidingDiamond {
+      position: absolute;
+      top: 0;
+      left: calc(-1 * vars.$side-padding);
+    }
+  }
+
+  .rope {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: calc(-1 * vars.$side-padding);
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    height: auto;
+
+    .diamond {
+      display: none;
+    }
+  }
+}
+.leftVector {
+  z-index: 4;
+  position: absolute;
+  left: -1rem;
+  height: 100%;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    left: -10rem;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    display: none;
+  }
+}
+
+.leftRockMobile {
+  display: none;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    display: block;
+    z-index: 4;
+    position: absolute;
+    left: -2rem;
+    height: 100%;
+  }
+}
+
+.rightVector {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.brownCarpet {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  flex-shrink: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #201606;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    height: 70%;
+  }
+}
+
+.carpet {
+  position: absolute;
+  right: 3.11rem;
+  bottom: 4.92rem;
+  flex-shrink: 0;
+  z-index: 3;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    top: 35%;
+    left: 10%;
+  }
+}
+
+.racoon {
+  position: absolute;
+  top: 9.41rem;
+  right: 0.61rem;
+  flex-shrink: 0;
+  z-index: 4;
+  width: 40%;
+  height: auto;
+}
+
+.banner1 {
+  position: absolute;
+  left: 25%;
+  z-index: 3;
+  flex-shrink: 0;
+  width: 25%;
+  top: 0;
+  @media screen and (max-width: vars.$breakpoint-md) {
+    left: 20%;
+  }
+}
+.banner2 {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  flex-shrink: 0;
+  width: 15%;
+  top: 0;
+}
+
+.bookShelf {
+  width: 30%;
+  position: absolute;
+  left: 52%;
+  top: 10%;
+}
+
+.statsContainer {
+  position: absolute;
+  gap: 1rem;
+  bottom: 1rem;
+  left: 2rem;
+  z-index: 4;
+}

@@ -10,6 +10,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { SwipeableDrawer } from '@mui/material';
 import MLHBanner from '../MLHBanner';
 import { ArrowDropDown } from '@mui/icons-material';
+import DiamondHacksLogo from '@/public/assets/general-logo-community.png';
 
 interface LinkMetadata {
   name: string;
@@ -30,7 +31,7 @@ const yearLinks: LinkMetadata[] = [
 ];
 
 const DEBOUNCE_MS = 150; // Prevent back-to-back updates within 150ms
-const MOBILE_BREAKPOINT = 950;
+const MOBILE_BREAKPOINT = 1000;
 
 export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -88,11 +89,11 @@ export default function Navbar() {
     <>
       <div className={`${styles.container} ${visible ? styles.visible : styles.hidden}`}>
         <div className={styles.logo}>
-          <Image src="/assets/acm-logo.png" alt="ACM Logo" width={48} height={48} />
+          <Image src="/assets/general-logo-community.png" alt="ACM Logo" width={48} height={48} />
           <Typography variant="body/large" className={styles.logoText}>
             <b>diamond</b>
             <br />
-            hacks
+            hacks 3.0
           </Typography>
         </div>
         <Typography variant="body/large" className={styles.desktopLinks}>
@@ -108,7 +109,7 @@ export default function Navbar() {
           ))}
           <div className={styles.yearDropdown}>
             <button className={styles.yearToggle} onClick={() => setYearMenuOpen(o => !o)}>
-              Archives
+              Archive
               <ArrowDropDown />
             </button>
 
@@ -128,6 +129,18 @@ export default function Navbar() {
             )}
           </div>
         </Typography>
+        {/* <Typography variant="label/medium" className={styles.apply}>
+          <div>
+            <Link
+              href="https://discord.gg/diamondhacks"
+              target="_blank"
+              className={styles.ctaButton}
+            >
+              Apply Now
+            </Link>
+          </div>
+        </Typography> */}
+
         <div className={styles.mobileIcons}>
           <div className={`${styles.menuIcon} ${mobileMenuOpen ? '' : styles.hidden}`}>
             <CloseIcon onClick={() => setMobileMenuOpen(false)} />

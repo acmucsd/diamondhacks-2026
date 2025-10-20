@@ -1,0 +1,57 @@
+@use '../../styles/vars.scss' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2.5rem;
+  position: absolute;
+  bottom: 6.25rem;
+  right: 3rem;
+  z-index: 1000;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    bottom: 10%;
+    right: 10%;
+    gap: 0.5rem;
+  }
+}
+.textSpacing {
+  display: flex;
+  flex-direction: column;
+}
+.question {
+  color: vars.$white;
+  text-align: right;
+  font-family: var(--font-jaini-purva);
+  font-size: 2.5625rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.01563rem;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.highlight {
+  color: vars.$yellow;
+}
+
+.ctaButton {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.95rem;
+  background: var(--White, #fff);
+  color: var(--black, #000);
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    font-size: 0.75rem !important;
+    padding: 0.5rem 1rem;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 0.5rem !important;
+    padding: 0.5rem 1rem;
+  }
+}

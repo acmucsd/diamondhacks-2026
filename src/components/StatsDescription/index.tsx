@@ -5,8 +5,8 @@ const StatsDescription: React.FC = () => {
   return (
     <div className={styles.container}>
       <Typography className={styles.title} variant="display/heavy/small">
-        Take <span className={styles.diamond}>Diamond</span>
-        <span className={styles.hacks}>Hacks</span> to new heights!
+        Over the years,
+        <br /> we had ...
       </Typography>
       <div className={styles.statBox}>
         <Typography variant="display/heavy/small">
@@ -21,12 +21,12 @@ const StatsDescription: React.FC = () => {
           <span className={styles.statNumber2}>600+</span>
         </Typography>
         <Typography className={styles.info} variant="body/medium">
-          attendees
+          total attendees
         </Typography>
       </div>
       <div className={styles.statBox}>
         <Typography variant="display/heavy/small">
-          <span className={styles.statNumber3}>$5k+</span>
+          <span className={styles.statNumber3}>$5000+</span>
         </Typography>
         <Typography className={styles.info} variant="body/medium">
           in prizes

@@ -3,16 +3,30 @@
 .container {
   display: flex;
   flex-direction: row;
+  flex-shrink: 0;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 2rem vars.$side-padding;
-  background-color: vars.$black;
+  background-color: #111c328c;
   transition: transform 0.15s ease-in-out;
   z-index: 2000;
   gap: 3rem;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    #e981a0 0%,
+    #ff6f6f 16.15%,
+    #f9a857 34.9%,
+    #51c0c0 56.77%,
+    #62b0ff 74.48%,
+    #816dff 100%
+  );
+  border-image-slice: 1;
+  backdrop-filter: blur(50px);
 
   @media screen and (max-width: vars.$breakpoint-navbar) {
     padding: 1rem vars.$side-padding-mobile;
@@ -50,7 +64,8 @@
 .desktopLinks {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 3rem;
+  margin-right: auto;
 
   @media screen and (max-width: vars.$breakpoint-navbar) {
     display: none;
@@ -144,4 +159,17 @@
       }
     }
   }
+}
+
+.ctaButton {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  background-color: vars.$white;
+  color: vars.$teal;
+  border: none;
+  border-radius: 1.875rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
 }
