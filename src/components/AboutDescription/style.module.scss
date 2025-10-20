@@ -1,37 +1,53 @@
 @use '../../styles/vars.scss' as vars;
 
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+  gap: 2.375rem;
+  z-index: 10;
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
 
   .title {
+    font-family: var(--font-jaini-purva);
+    font-weight: 400;
+    font-size: 3.4375rem;
+    line-height: 3rem;
+    letter-spacing: -0.01563rem;
+
     @media screen and (max-width: vars.$breakpoint-md) {
-      font-size: 2.25rem !important;
+      font-size: 2rem !important;
       line-height: 2.625rem !important;
     }
   }
 
   .diamond {
-    color: vars.$light-blue;
+    background: linear-gradient(90deg, #ffd13b 0%, #ca8300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     word-break: break-word;
   }
 
   .hacks {
-    color: vars.$orange;
-  }
-
-  .emphasis {
     color: vars.$yellow;
   }
 
+  .emphasis {
+    color: vars.$light-blue;
+  }
+
   .description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
     @media screen and (max-width: vars.$breakpoint-md) {
-      grid-template-columns: 1fr;
+      flex-direction: column;
     }
   }
 

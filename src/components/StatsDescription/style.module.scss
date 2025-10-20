@@ -3,43 +3,43 @@
 .container {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: left;
   gap: 2.5rem;
-  margin: 0 auto;
-  width: 80%;
 
   @media screen and (max-width: vars.$breakpoint-md) {
     text-align: left;
+    gap: 1rem;
   }
 
   .title {
+    font-family: var(--font-jaini-purva);
+    font-size: 2.5rem;
     @media screen and (max-width: vars.$breakpoint-md) {
       font-size: 2.25rem !important;
       line-height: 2.625rem !important;
     }
   }
 
-  .diamond {
-    color: vars.$light-blue;
-    word-break: break-word;
-  }
-
-  .hacks {
-    color: vars.$orange;
-  }
-
   .statNumber1 {
-    font-size: 5.5rem;
-    color: vars.$blue;
+    font-size: 4.125rem;
+    color: vars.$green;
   }
 
   .statNumber2 {
-    font-size: 5.5rem;
-    color: vars.$red;
+    font-size: 4.125rem;
+    color: vars.$light-blue;
   }
 
   .statNumber3 {
-    font-size: 5.5rem;
+    font-size: 4.125rem;
     color: vars.$yellow;
+  }
+
+  .statNumber1,
+  .statNumber2,
+  .statNumber3 {
+    @media screen and (max-width: vars.$breakpoint-md) {
+      font-size: 2.5rem;
+    }
   }
 }

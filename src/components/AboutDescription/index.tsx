@@ -4,34 +4,26 @@ import styles from './style.module.scss';
 const AboutDescription: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Typography className={styles.title} variant="display/heavy/small">
-        What is <span className={styles.diamond}>Diamond</span>
-        <span className={styles.hacks}>Hacks</span>?
-      </Typography>
+      <span className={styles.title}>
+        What is <span className={styles.diamond}>DiamondHacks</span>?
+      </span>
       <div className={styles.description}>
         <Typography className={styles.info} variant="body/medium">
-          Before we embark on our grand heist, let me tell you a bit about DiamondHacks, a thrilling
-          <span className={styles.emphasis}> 36-hour hackathon</span> heist organized by the
-          Association for Computing Machinery at UCSD. Get ready for an adventure where some of the
-          sharpest minds from universities all over San Diego gather to join our quest.
+          Get ready for DiamondHacks, a thrilling
+          <span className={styles.emphasis}> 36-hour hackathon</span> tournament organized by the
+          Association for Computing Machinery at UCSD. The sharpest minds from universities across
+          San Diego will gather to join our magic tournament.
         </Typography>
         <Typography className={styles.info} variant="body/medium">
-          There will be hundreds of hackers teaming up to devise projects that showcase their skills
-          and cunning. You’ll have the chance to choose different{' '}
-          <span className={styles.emphasis}>creative tracks</span> and{' '}
-          <span className={styles.emphasis}>attend workshops </span>
-          led by fellow hackers to sharpen your tech prowess. There’ll also be{' '}
-          <span className={styles.emphasis}>social events</span> where we can plot our next moves,
-          forge alliances with other talented outlaws, and snatch some loot.
+          Hundreds of hackers will team up to make projects showcasing their skills. Choose from
+          different <span className={styles.hacks}>creative tracks</span> and{' '}
+          <span className={styles.hacks}>attend workshops </span>
+          to refine your craft. Join <span className={styles.emphasis}>social events</span> to make
+          alliances with other talented students and celebrate magic!
         </Typography>
-      </div>
-      <div className={styles.prompt}>
-        <Typography className={styles.label} variant="label/large">
-          Are you ready to join us on this weekend-long escapade?
-        </Typography>
-        <Typography variant="body/small">
-          Keep your guard up and watch out for any traps along the way! Let’s make our mark and pull
-          off the ultimate hack!
+        <Typography className={styles.bottomText} variant="body/medium">
+          Keep your wand at the ready and your eyes sharp for any tricks along the way. Let’s make
+          our mark and cast the ultimate hack!
         </Typography>
       </div>
     </div>

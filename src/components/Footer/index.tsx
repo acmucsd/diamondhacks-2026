@@ -5,15 +5,11 @@ import Image from 'next/image';
 import Instagram from '../../../public/assets/instagram.svg';
 import Discord from '../../../public/assets/discord.svg';
 import Facebook from '../../../public/assets/facebook.svg';
-import DiamondPileLeft from '../../../public/assets/diamond-pile-left.png';
-import DiamondPileRight from '../../../public/assets/diamond-pile-right.png';
 import AcmLogo from '../../../public/assets/acm-logo.png';
 
 const Footer: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Image src={DiamondPileLeft} alt="Pile of diamonds" className={styles.backgroundLeft} />
-      <Image src={DiamondPileRight} alt="Pile of diamonds" className={styles.backgroundRight} />
       <div className={styles.links}>
         <Link href="https://acmucsd.com/about">
           <Typography variant="body/large">About Us</Typography>

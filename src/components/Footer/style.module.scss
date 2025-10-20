@@ -18,34 +18,6 @@
   }
 }
 
-.backgroundLeft {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  max-width: min(100% - 2 * vars.$side-padding, 580px);
-  height: auto;
-  object-fit: contain;
-
-  @media screen and (max-width: vars.$breakpoint-md) {
-    max-width: min(100% - 2 * vars.$side-padding-mobile, 580px);
-  }
-}
-
-.backgroundRight {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  max-width: min(100% - 2 * vars.$side-padding, 850px);
-  height: auto;
-  object-fit: contain;
-
-  @media screen and (max-width: vars.$breakpoint-md) {
-    max-width: min(100% - 2 * vars.$side-padding-mobile, 850px);
-  }
-}
-
 .links {
   display: flex;
   gap: 6.5rem;

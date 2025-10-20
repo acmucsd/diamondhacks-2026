@@ -4,13 +4,14 @@ import { useState } from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/Add';
 import styles from './style.module.scss';
 import Typography from '../Typography';
-import { Question } from '@/sections/FAQ/questions';
+import { Question } from '@/sections/Room3/questions';
 
 interface FAQAccordionProps {
   data: Question[];
+  className?: string;
 }
 
 export default function FAQ({ data }: FAQAccordionProps) {
@@ -25,7 +26,7 @@ export default function FAQ({ data }: FAQAccordionProps) {
   };
 
   return (
-    <>
+    <div className={styles.faqContainer}>
       {data.map((questionObject, index) => (
         <Accordion
           elevation={0}
@@ -49,6 +50,6 @@ export default function FAQ({ data }: FAQAccordionProps) {
           </AccordionDetails>
         </Accordion>
       ))}
-    </>
+    </div>
   );
 }
