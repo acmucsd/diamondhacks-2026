@@ -3,7 +3,8 @@ import questions from '../../../../public/assets/questions.json';
 import { Scores } from '@/app/sorting-quiz/page';
 import Typography from '@/components/Typography';
 import styles from './style.module.scss';
-import QuizImage from './images';
+import DynamicSVG from '@/components/sorting-quiz/DynamicSvg';
+import OptionPicker from '@/components/sorting-quiz/OptionPicker';
 
 interface QuizProps {
   addScores: (scores: Partial<Scores>) => void;
@@ -12,24 +13,14 @@ interface QuizProps {
 
 const Quiz: React.FC<QuizProps> = ({ addScores, onComplete }) => {
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState<number | undefined>();
-
   const { question, options } = questions[questionIndex];
-
-  function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setSelectedOptionIndex(Number(event.target.value));
-  }
-
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (selectedOptionIndex === undefined) return;
-    addScores(options[selectedOptionIndex].scores);
+  
+  function handleSubmit(scores: Partial<Scores>) {
     if (questionIndex == questions.length - 1) {
       onComplete();
-      return;
+    } else {
+      setQuestionIndex(questionIndex + 1);
     }
-    setQuestionIndex(questionIndex + 1);
-    setSelectedOptionIndex(undefined);
   }
 
   return (
@@ -39,28 +30,9 @@ const Quiz: React.FC<QuizProps> = ({ addScores, onComplete }) => {
       </Typography>
       <Typography variant="label/large">{question}</Typography>
       <div className={styles.imageContainer}>
-        <QuizImage index={questionIndex} className={styles.image} />
+        <DynamicSVG name={`question${questionIndex + 1}`} alt={`Question ${questionIndex + 1} image`} className={styles.image} />
       </div>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        {options.map((option, index) => (
-          <>
-            <input
-              type="radio"
-              name="question"
-              value={index}
-              checked={index === selectedOptionIndex}
-              onChange={handleChange}
-              id={option.text}
-            />
-            <label key={option.text} htmlFor={option.text} className={styles.button}>
-              <Typography variant="body/medium">{option.text}</Typography>
-            </label>
-          </>
-        ))}
-        <button type="submit" className={styles.submitButton}>
-          <Typography variant="body/medium">Select</Typography>
-        </button>
-      </form>
+      <OptionPicker options={options} onSubmit={handleSubmit} />
     </div>
   );
 };
