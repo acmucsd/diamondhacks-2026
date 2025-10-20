@@ -53,5 +53,11 @@ export default function SortingQuiz() {
       break;
   }
 
-  return <main className={styles.main}>{sectionElement}</main>;
+  return (
+    <div className={styles.body}>
+      <main className={styles.main}>
+        {sectionElement}
+      </main>
+    </div>
+  );
 }

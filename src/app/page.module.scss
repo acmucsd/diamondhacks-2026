@@ -1,5 +1,17 @@
 @use '../styles/vars.scss' as vars;
 
+.body {
+  background: url('/assets/paper_mache.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 0 vars.$side-padding;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    padding: 0 vars.$side-padding-mobile;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;

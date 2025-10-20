@@ -8,13 +8,11 @@
   align-items: center;
   padding: 8rem vars.$side-padding;
   position: relative;
-  margin: 0 calc(vars.$side-padding * -1);
 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
   @media screen and (max-width: vars.$breakpoint-md) {
     padding: 4rem vars.$side-padding-mobile;
-    margin: 0 calc(vars.$side-padding-mobile * -1);
   }
 }
 
