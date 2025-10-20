@@ -55,9 +55,7 @@ export default function SortingQuiz() {
 
   return (
     <div className={styles.body}>
-      <main className={styles.main}>
-        {sectionElement}
-      </main>
+      <main className={styles.main}>{sectionElement}</main>
     </div>
   );
 }
