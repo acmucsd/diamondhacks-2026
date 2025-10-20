@@ -16,6 +16,7 @@ const Quiz: React.FC<QuizProps> = ({ addScores, onComplete }) => {
   const { question, options } = questions[questionIndex];
 
   function handleSubmit(scores: Partial<Scores>) {
+    addScores(scores);
     if (questionIndex == questions.length - 1) {
       onComplete();
     } else {
