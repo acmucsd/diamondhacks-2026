@@ -5,13 +5,13 @@ import styles from './style.module.scss';
 import React from 'react';
 
 interface Option {
-  text: string,
-  scores: Partial<Scores>,
+  text: string;
+  scores: Partial<Scores>;
 }
 
 interface OptionPickerProps {
-  options: Option[],
-  onSubmit: (scores: Partial<Scores>) => void,
+  options: Option[];
+  onSubmit: (scores: Partial<Scores>) => void;
 }
 
 const OptionPicker: React.FC<OptionPickerProps> = ({ options, onSubmit }) => {
@@ -30,26 +30,26 @@ const OptionPicker: React.FC<OptionPickerProps> = ({ options, onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-        {options.map((option, index) => (
-          <React.Fragment key={option.text}>
-            <input
-              type="radio"
-              name="question"
-              value={index}
-              checked={index === selectedOptionIndex}
-              onChange={handleChange}
-              id={option.text}
-            />
-            <label htmlFor={option.text} className={styles.button}>
-              <Typography variant="body/medium">{option.text}</Typography>
-            </label>
-          </React.Fragment>
-        ))}
-        <button type="submit" className={styles.submitButton}>
-          <Typography variant="body/medium">Select</Typography>
-        </button>
+      {options.map((option, index) => (
+        <React.Fragment key={option.text}>
+          <input
+            type="radio"
+            name="question"
+            value={index}
+            checked={index === selectedOptionIndex}
+            onChange={handleChange}
+            id={option.text}
+          />
+          <label htmlFor={option.text} className={styles.button}>
+            <Typography variant="body/medium">{option.text}</Typography>
+          </label>
+        </React.Fragment>
+      ))}
+      <button type="submit" className={styles.submitButton}>
+        <Typography variant="body/medium">Select</Typography>
+      </button>
     </form>
   );
-}
+};
 
 export default OptionPicker;
