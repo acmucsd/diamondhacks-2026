@@ -29,18 +29,7 @@
 
   .banners {
     width: 100vw;
-
-    @media screen and (max-width: calc((vars.$breakpoint-sm + vars.$breakpoint-md)/2)) {
-      display: none;
-    }
-  }
-
-  .bannersMobile {
-    width: 100vw;
-
-    @media screen and (min-width: calc((vars.$breakpoint-sm + vars.$breakpoint-md)/2)) {
-      display: none;
-    }
+    height: auto;
   }
 
   .startButton {
