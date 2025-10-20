@@ -14,7 +14,7 @@ const SortingQuizSection: React.FC = () => {
       </div>
       <Typography variant="label/large" className={styles.applyText}>
         <div>
-          <Link href="https://discord.gg/diamondhacks" target="_blank" className={styles.ctaButton}>
+          <Link href="/sorting-quiz" target="_blank" className={styles.ctaButton}>
             Take the Sorting Quiz
           </Link>
         </div>
