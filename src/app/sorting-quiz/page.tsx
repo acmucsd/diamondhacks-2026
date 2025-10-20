@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Landing from "@/sections/sorting-quiz/Landing";
-import Quiz from "@/sections/sorting-quiz/Quiz";
-import Result from "@/sections/sorting-quiz/Result";
+import { useState } from 'react';
+import Landing from '@/sections/sorting-quiz/Landing';
+import Quiz from '@/sections/sorting-quiz/Quiz';
+import Result from '@/sections/sorting-quiz/Result';
 import styles from './page.module.scss';
 
 enum Section {
@@ -16,7 +16,7 @@ export type House = 'G' | 'R' | 'S' | 'T';
 
 export type Scores = {
   [key in House]: number;
-}
+};
 
 function getHouse(scores: Scores): House {
   const maxScore = Math.max(...Object.values(scores));
@@ -28,7 +28,7 @@ function getHouse(scores: Scores): House {
 
 export default function SortingQuiz() {
   const [section, setSection] = useState(Section.Landing);
-  const [scores, setScores] = useState<Scores>({G: 0, R: 0, S: 0, T: 0});
+  const [scores, setScores] = useState<Scores>({ G: 0, R: 0, S: 0, T: 0 });
 
   function addScores(scoresToAdd: Partial<Scores>) {
     setScores({
@@ -53,9 +53,5 @@ export default function SortingQuiz() {
       break;
   }
 
-  return (
-    <main className={styles.main}>
-      {sectionElement}
-    </main>
-  );
+  return <main className={styles.main}>{sectionElement}</main>;
 }

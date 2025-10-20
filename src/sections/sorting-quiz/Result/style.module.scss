@@ -1,58 +1,56 @@
 @use '../../../styles/vars.scss' as vars;
-@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap');
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    font-family: 'Jaini Purva';
-    font-weight: 400;
-    font-style: normal;
-    line-height: normal;
-    color: vars.$white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: vars.$white;
 
-    .name {
-        font-size: 3.125rem;
-        background: linear-gradient(140deg, #FFD13B 42.24%, #CA8300 66.35%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0;
+  .name {
+    font-size: 3.125rem;
+    background: linear-gradient(140deg, #ffd13b 42.24%, #ca8300 66.35%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 
-        @media screen and (max-width: vars.$breakpoint-md) {
-            font-size: 2.5625rem;
-        }
-
-        @media screen and (max-width: vars.$breakpoint-sm) {
-            font-size: 2rem;
-        }
+    @media screen and (max-width: vars.$breakpoint-md) {
+      font-size: 2.5625rem;
     }
 
-    .imageContainer {
-        width: 276px;
-        height: 276px;
+    @media screen and (max-width: vars.$breakpoint-sm) {
+      font-size: 2rem;
+    }
+  }
 
-        .image {
-            width: 100%;
-            height: 100%;
-            overflow: visible;
-        }
+  .imageContainer {
+    width: 276px;
+    height: 276px;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+  }
+
+  .description {
+    max-width: 963px;
+    font-size: 1.72rem;
+    margin: 0 2rem;
+
+    @media screen and (max-width: vars.$breakpoint-md) {
+      font-size: 1.36rem;
     }
 
-    .description {
-        max-width: 963px;
-        font-size: 1.72rem;
-        margin: 0 2rem;
-
-        @media screen and (max-width: vars.$breakpoint-md) {
-            font-size: 1.36rem;
-        }
-
-        @media screen and (max-width: vars.$breakpoint-sm) {
-            font-size: 1rem;
-            margin: 0 1rem;
-        }
+    @media screen and (max-width: vars.$breakpoint-sm) {
+      font-size: 1rem;
+      margin: 0 1rem;
     }
+  }
 }
