@@ -1,10 +1,10 @@
 import { House } from '@/app/sorting-quiz/page';
 import results from '../../../../public/assets/results.json';
 import styles from './style.module.scss';
-import Geisel from '../../../../public/assets/geisel.svg';
-import Raccoon from '../../../../public/assets/raccoon.svg';
-import SunGod from '../../../../public/assets/sun-god.svg';
-import Triton from '../../../../public/assets/triton.svg';
+import Geisel from '../../../../public/assets/geisel-icon.svg';
+import Raccoon from '../../../../public/assets/raccoon-icon.svg';
+import SunGod from '../../../../public/assets/sun-god-icon.svg';
+import Triton from '../../../../public/assets/triton-icon.svg';
 import localFont from 'next/font/local';
 
 const JainiPurva = localFont({
