@@ -53,4 +53,14 @@
       margin: 0 1rem;
     }
   }
+
+  .homeLink {
+    display: block;
+    padding: 1rem 2rem;
+    border: 1px solid vars.$white;
+    border-radius: 1.875rem;
+    color: vars.$white;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
