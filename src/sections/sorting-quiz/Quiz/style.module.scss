@@ -1,0 +1,23 @@
+@use '../../../styles/vars.scss' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 276px;
+    overflow-x: clip;
+
+    .image {
+      max-height: 100%;
+      overflow: visible;
+    }
+  }
+}

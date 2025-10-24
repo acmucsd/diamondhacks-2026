@@ -1,0 +1,13 @@
+@use '../../styles/vars.scss' as vars;
+
+.body {
+  padding: 0 vars.$side-padding;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    padding: 0 vars.$side-padding-mobile;
+  }
+}
+
+.main {
+  margin-top: 8rem;
+}

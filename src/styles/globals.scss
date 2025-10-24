@@ -17,19 +17,3 @@ html {
   // background: linear-gradient(180deg, #151625 0%, #4e4f64 100%);
   background-color: #10131b;
 }
-
-body {
-  background: url('/assets/paper_mache.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  padding: 0 vars.$side-padding;
-
-  @media screen and (max-width: vars.$breakpoint-md) {
-    padding: 0 vars.$side-padding-mobile;
-  }
-}
-
-section {
-  // padding-top: 4rem;
-}

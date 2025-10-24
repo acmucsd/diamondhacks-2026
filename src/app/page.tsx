@@ -7,12 +7,14 @@ import Sponsors from '@/sections/Sponsors';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Hero />
-      <Room1 />
-      <Room2 />
-      <Room3 />
-      <Sponsors />
-    </main>
+    <div className={styles.body}>
+      <main className={styles.main}>
+        <Hero />
+        <Room1 />
+        <Room2 />
+        <Room3 />
+        <Sponsors />
+      </main>
+    </div>
   );
 }
