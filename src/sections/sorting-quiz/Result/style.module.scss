@@ -12,6 +12,7 @@
   color: vars.$white;
 
   .name {
+    font-family: var(--font-jaini-purva);
     font-size: 3.125rem;
     background: linear-gradient(140deg, #ffd13b 42.24%, #ca8300 66.35%);
     background-clip: text;
@@ -39,8 +40,7 @@
     }
   }
 
-  .description {
-    max-width: 963px;
+  .text {
     font-size: 1.72rem;
     margin: 0 2rem;
 
@@ -52,6 +52,14 @@
       font-size: 1rem;
       margin: 0 1rem;
     }
+  }
+
+  .nature {
+    font-family: var(--font-jaini-purva);
+  }
+
+  .description {
+    max-width: 963px;
   }
 
   .homeLink {
