@@ -19,9 +19,10 @@
   max-width: 600px;
   width: 50%;
   right: 0;
-  height: auto;
-  flex-shrink: 0;
   top: 0;
+
+  pointer-events: none;
+  user-select: none;
 }
 
 .roofWrapper {
@@ -49,7 +50,12 @@
   background-color: #22272d;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   position: relative;
-  margin: auto;
+
+  overflow: visible;
+  
+  display: block;
+  margin: 0 auto;
+  flex-shrink: 0;
   z-index: 11;
 
   @media screen and (max-width: vars.$breakpoint-md) {
