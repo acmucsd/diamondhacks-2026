@@ -20,7 +20,7 @@ export default function FAQ({ data }: FAQAccordionProps) {
 
   const handleChange = (panelIndex: number) => (_e: React.SyntheticEvent, newExpanded: boolean) => {
     if (newExpanded) {
-      setExpandedIndices((prevIndices) => {
+      setExpandedIndices(prevIndices => {
         const updatedIndices = [...prevIndices, panelIndex];
         if (updatedIndices.length > maxExpandedFAQ) {
           updatedIndices.shift();
@@ -30,7 +30,6 @@ export default function FAQ({ data }: FAQAccordionProps) {
     } else {
       setExpandedIndices(expandedIndices.filter(index => index !== panelIndex));
     }
-    console.log(expandedIndices);
   };
 
   return (
