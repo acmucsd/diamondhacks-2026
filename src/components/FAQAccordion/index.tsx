@@ -16,7 +16,7 @@ interface FAQAccordionProps {
 
 export default function FAQ({ data }: FAQAccordionProps) {
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
-  const maxExpandedFAQ = 2;
+  const maxExpandedFAQ = 1;
 
   const handleChange = (panelIndex: number) => (_e: React.SyntheticEvent, newExpanded: boolean) => {
     if (newExpanded) {
