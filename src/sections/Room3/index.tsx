@@ -12,6 +12,7 @@ const Room3: React.FC = () => {
         <div className={styles.trapezoidInner}> 
           <Room3Crack className={styles.crack} />
         </div>
+        <div className={styles.gradient} />
         <div className={styles.faqContent}>
           <Typography variant="display/light/medium" className={styles.title}>
             Frequently asked questions

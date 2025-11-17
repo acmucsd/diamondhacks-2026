@@ -40,8 +40,30 @@
 .trapezoidInner {
   position: absolute;
   inset: 20px;
-  background: #5C677B66;  // TODO: change to gradient
+  background: radial-gradient(circle 700px at 85% 90%, #5C677BBB, #40454B);
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  z-index: 1;
+
+  @media screen and (max-width: vars.$breakpoint-xl) {
+    background: radial-gradient(circle 600px at 90% 90%, #5C677BBB, #40454B);
+  }
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    background: radial-gradient(circle 500px at 90% 90%, #5C677BBB, #40454B);
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    background: radial-gradient(circle 400px at 85% 90%, #5C677BBB, #40454B);
+  }
+}
+
+.gradient {
+  inset: 20px;
+  clip-path: polygon(10% 0, 90% 0, 90% 100%, 10% 100%);
+  position: absolute;
+  
+  background: #696F78;
+  z-index: 0;
 }
 
 .crack {
@@ -57,7 +79,7 @@
   bottom: 0;
   left: 65%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
   width: 50%;
 
   @media screen and (max-width: vars.$breakpoint-lg) {
