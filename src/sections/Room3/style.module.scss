@@ -28,7 +28,7 @@
   top: 0%;
   width: 88%;
   height: 100%;
-  background: #22272D; 
+  background: #22272d;
   position: absolute;
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
 
@@ -40,20 +40,20 @@
 .trapezoidInner {
   position: absolute;
   inset: 20px;
-  background: radial-gradient(circle 700px at 85% 90%, #5C677BBB, #40454B);
+  background: radial-gradient(circle 700px at 85% 90%, #5c677bbb, #40454b);
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
   z-index: 1;
 
   @media screen and (max-width: vars.$breakpoint-xl) {
-    background: radial-gradient(circle 600px at 90% 90%, #5C677BBB, #40454B);
+    background: radial-gradient(circle 600px at 90% 90%, #5c677bbb, #40454b);
   }
 
   @media screen and (max-width: vars.$breakpoint-lg) {
-    background: radial-gradient(circle 500px at 90% 90%, #5C677BBB, #40454B);
+    background: radial-gradient(circle 500px at 90% 90%, #5c677bbb, #40454b);
   }
 
   @media screen and (max-width: vars.$breakpoint-md) {
-    background: radial-gradient(circle 400px at 85% 90%, #5C677BBB, #40454B);
+    background: radial-gradient(circle 400px at 85% 90%, #5c677bbb, #40454b);
   }
 }
 
@@ -61,8 +61,8 @@
   inset: 20px;
   clip-path: polygon(10% 0, 90% 0, 90% 100%, 10% 100%);
   position: absolute;
-  
-  background: #696F78;
+
+  background: #696f78;
   z-index: 0;
 }
 

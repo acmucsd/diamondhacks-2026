@@ -9,7 +9,7 @@ const Room3: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.trapezoidOuter} id="faq">
         <Room3Decor className={styles.decor} />
-        <div className={styles.trapezoidInner}> 
+        <div className={styles.trapezoidInner}>
           <Room3Crack className={styles.crack} />
         </div>
         <div className={styles.gradient} />
