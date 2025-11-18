@@ -39,7 +39,7 @@ export default function FAQ({ data }: FAQAccordionProps) {
             expandIcon={<ExpandMoreIcon className={styles.expandIcon} />}
             className={styles.accordionSummary}
           >
-            <Typography variant="body/large" className={styles.accordionQuestion}>
+            <Typography variant="label/large" className={styles.accordionQuestion}>
               {questionObject.question}
             </Typography>
           </AccordionSummary>

@@ -71,9 +71,9 @@
 .accordionQuestion {
   color: vars.$white;
 
-  @media screen and (max-width: vars.$breakpoint-md) {
-    font-size: 0.75rem !important;
-  }
+  // @media screen and (max-width: vars.$breakpoint-md) {
+  //   font-size: 0.75rem !important;
+  // }
 }
 
 .accordionAnswer {
