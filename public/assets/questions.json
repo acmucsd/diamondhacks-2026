@@ -1,1 +1,207 @@
-[{"question": "What would your friends say is your best quality?", "options": [{"text": "My energy and enthusiasm", "scores": {"S": 50, "R": 50}}, {"text": "My adaptability and good nature", "scores": {"T": 100}}, {"text": "My thoughtfulness and excellent planning abilities", "scores": {"G": 100}}, {"text": "My creativity and boldness", "scores": {"S": 50, "R": 50}}]}, {"question": "If you could choose a familiar, what would it be?", "options": [{"text": "Dog or cat \u2014 practical and cuddly", "scores": {"G": 70, "R": 30}}, {"text": "Dragon \u2014 big and chaotic!", "scores": {"S": 70, "R": 30}}, {"text": "Falcon or raven \u2014 sharp and focused", "scores": {"G": 70, "S": 30}}, {"text": "Capybara \u2014 social and chill", "scores": {"T": 70, "R": 30}}]}, {"question": "Pick a treat!", "options": [{"text": "Panna Cotta or cr\u00e8me br\u00fbl\u00e9e", "scores": {"T": 100}}, {"text": "Matcha crepe cake", "scores": {"G": 100}}, {"text": "Funfetti cupcake", "scores": {"R": 100}}, {"text": "Dark chocolate lava cake", "scores": {"S": 100}}]}, {"question": "What would you wish for?", "options": [{"text": "World peace", "scores": {"R": 40, "T": 60}}, {"text": "More time", "scores": {"G": 70, "R": 30}}, {"text": "To excel at something", "scores": {"S": 50, "G": 50}}, {"text": "Superpowers", "scores": {"R": 70, "G": 30}}]}, {"question": "Pick a magical artifact:", "options": [{"text": "A gold sword that grants me the aura of a king", "scores": {"S": 100}}, {"text": "A pair of silver sneakers that let me dash across the sky", "scores": {"R": 100}}, {"text": "An onyx pen that can write down my thoughts as fast as they flow", "scores": {"G": 100}}, {"text": "A pair of white glasses that let me see the emotions of those around me", "scores": {"T": 100}}]}, {"question": "What kind of field would you like to pursue?", "options": [{"text": "Some kind of management where I can let my leadership skills shine", "scores": {"S": 100}}, {"text": "A role where I can use my adaptability to support my entire team", "scores": {"T": 100}}, {"text": "A field that allows me to try all my crazy ideas", "scores": {"R": 100}}, {"text": "Something technical where I can crack puzzles and find the answers", "scores": {"G": 100}}]}, {"question": "Where do you spend your free time?", "options": [{"text": "I love being around my friends the most, no matter where that brings me", "scores": {"T": 50, "R": 30, "S": 20}}, {"text": "I want to be somewhere new and exciting, like a festival, museum, or makerspace", "scores": {"R": 60, "G": 40}}, {"text": "A cozy nook or quiet corner", "scores": {"T": 30, "G": 70}}, {"text": "Wherever there\u2019s a challenge, like the gym or an amusement park", "scores": {"S": 60, "G": 20, "R": 20}}]}, {"question": "Pick a color:", "options": [{"text": "Crimson red", "scores": {"G": 100}}, {"text": "Dandelion yellow", "scores": {"T": 50, "R": 50}}, {"text": "Sage green", "scores": {"G": 40, "T": 60}}, {"text": "Sky blue", "scores": {"T": 60, "G": 40}}, {"text": "Bright purple", "scores": {"R": 100}}]}, {"question": "What motivates you to learn?", "options": [{"text": "I want to understand and connect with the people around me", "scores": {"T": 70, "R": 30}}, {"text": "I want to solve problems and figure out complex ideas", "scores": {"G": 70, "S": 30}}, {"text": "I want to bounce ideas off others and try new things to satisfy my curiosity", "scores": {"R": 70, "T": 30}}, {"text": "I want to lead and create with confidence \u2014 knowledge is power", "scores": {"S": 70, "G": 30}}]}, {"question": "What motivates you to fight?", "options": [{"text": "To protect and support the people I care about", "scores": {"T": 70, "S": 30}}, {"text": "When something\u2019s inefficient or just wrong", "scores": {"G": 70, "T": 30}}, {"text": "To inspire, energize, and shake things up", "scores": {"R": 70, "S": 30}}, {"text": "To win", "scores": {"S": 70, "G": 30}}]}, {"question": "What would you say is your biggest personality flaw?", "options": [{"text": "I get so caught up in helping others that I forget to take care of myself", "scores": {"T": 100}}, {"text": "I can start overthinking things", "scores": {"G": 100}}, {"text": "I bounce between too many ideas or commitments and struggle to finish things", "scores": {"R": 100}}, {"text": "I can come off as impatient or too intense when I really care about something", "scores": {"S": 100}}]}, {"question": "What\u2019s your idea of a perfect day?", "options": [{"text": "A slow morning, meaningful conversations, and a long walk by the beach", "scores": {"T": 100}}, {"text": "Working late into the night on my favorite project", "scores": {"G": 80, "R": 20}}, {"text": "Waking up somewhere new and hanging out with my friends", "scores": {"R": 100}}, {"text": "Crushing a big goal I\u2019ve been working towards for weeks and treating my friends to dinner after", "scores": {"S": 80, "T": 20}}]}, {"question": "What\u2019s your ideal room decor?", "options": [{"text": "Soft lights, cozy blankets, my favorite vinyls and books", "scores": {"T": 100}}, {"text": "Clean lines, shelves full of books and gadgets, and a high-tech setup", "scores": {"G": 100}}, {"text": "Colorful art, vivid and bright lighting, and a box of snacks by my desk", "scores": {"R": 100}}, {"text": "Dark furniture, a huge whiteboard, and workout gear in the corner", "scores": {"S": 100}}]}, {"question": "If you were to end up on a deserted island, what would you take?", "options": [{"text": "A survival handbook", "scores": {"G": 100}}, {"text": "A fire starter", "scores": {"S": 100}}, {"text": "A tent", "scores": {"T": 100}}, {"text": "A huge box of snacks", "scores": {"R": 100}}]}, {"question": "Choose a Stuart art exhibit!", "options": [{"text": "The Silent, Whispering and Talking Trees", "scores": {"G": 100}}, {"text": "What Hath God Wrought", "scores": {"S": 100}}, {"text": "The Bear", "scores": {"R": 100}}, {"text": "Fallen Star", "scores": {"T": 100}}]}]
+[
+  {
+    "question": "What would your friends say is your best quality?",
+    "options": [
+      { "text": "My energy and enthusiasm", "scores": { "S": 50, "R": 50 } },
+      { "text": "My adaptability and good nature", "scores": { "T": 100 } },
+      { "text": "My thoughtfulness and excellent planning abilities", "scores": { "G": 100 } },
+      { "text": "My creativity and boldness", "scores": { "S": 50, "R": 50 } }
+    ]
+  },
+  {
+    "question": "If you could choose a familiar, what would it be?",
+    "options": [
+      { "text": "Dog or cat \u2014 practical and cuddly", "scores": { "G": 70, "R": 30 } },
+      { "text": "Dragon \u2014 big and chaotic!", "scores": { "S": 70, "R": 30 } },
+      { "text": "Falcon or raven \u2014 sharp and focused", "scores": { "G": 70, "S": 30 } },
+      { "text": "Capybara \u2014 social and chill", "scores": { "T": 70, "R": 30 } }
+    ]
+  },
+  {
+    "question": "Pick a treat!",
+    "options": [
+      { "text": "Panna Cotta or cr\u00e8me br\u00fbl\u00e9e", "scores": { "T": 100 } },
+      { "text": "Matcha crepe cake", "scores": { "G": 100 } },
+      { "text": "Funfetti cupcake", "scores": { "R": 100 } },
+      { "text": "Dark chocolate lava cake", "scores": { "S": 100 } }
+    ]
+  },
+  {
+    "question": "What would you wish for?",
+    "options": [
+      { "text": "World peace", "scores": { "R": 40, "T": 60 } },
+      { "text": "More time", "scores": { "G": 70, "R": 30 } },
+      { "text": "To excel at something", "scores": { "S": 50, "G": 50 } },
+      { "text": "Superpowers", "scores": { "R": 70, "G": 30 } }
+    ]
+  },
+  {
+    "question": "Pick a magical artifact:",
+    "options": [
+      { "text": "A gold sword that grants me the aura of a king", "scores": { "S": 100 } },
+      {
+        "text": "A pair of silver sneakers that let me dash across the sky",
+        "scores": { "R": 100 }
+      },
+      {
+        "text": "An onyx pen that can write down my thoughts as fast as they flow",
+        "scores": { "G": 100 }
+      },
+      {
+        "text": "A pair of white glasses that let me see the emotions of those around me",
+        "scores": { "T": 100 }
+      }
+    ]
+  },
+  {
+    "question": "What kind of field would you like to pursue?",
+    "options": [
+      {
+        "text": "Some kind of management where I can let my leadership skills shine",
+        "scores": { "S": 100 }
+      },
+      {
+        "text": "A role where I can use my adaptability to support my entire team",
+        "scores": { "T": 100 }
+      },
+      { "text": "A field that allows me to try all my crazy ideas", "scores": { "R": 100 } },
+      {
+        "text": "Something technical where I can crack puzzles and find the answers",
+        "scores": { "G": 100 }
+      }
+    ]
+  },
+  {
+    "question": "Where do you spend your free time?",
+    "options": [
+      {
+        "text": "I love being around my friends the most, no matter where that brings me",
+        "scores": { "T": 50, "R": 30, "S": 20 }
+      },
+      {
+        "text": "I want to be somewhere new and exciting, like a festival, museum, or makerspace",
+        "scores": { "R": 60, "G": 40 }
+      },
+      { "text": "A cozy nook or quiet corner", "scores": { "T": 30, "G": 70 } },
+      {
+        "text": "Wherever there\u2019s a challenge, like the gym or an amusement park",
+        "scores": { "S": 60, "G": 20, "R": 20 }
+      }
+    ]
+  },
+  {
+    "question": "Pick a color:",
+    "options": [
+      { "text": "Crimson red", "scores": { "G": 100 } },
+      { "text": "Dandelion yellow", "scores": { "T": 50, "R": 50 } },
+      { "text": "Sage green", "scores": { "G": 40, "T": 60 } },
+      { "text": "Sky blue", "scores": { "T": 60, "G": 40 } },
+      { "text": "Bright purple", "scores": { "R": 100 } }
+    ]
+  },
+  {
+    "question": "What motivates you to learn?",
+    "options": [
+      {
+        "text": "I want to understand and connect with the people around me",
+        "scores": { "T": 70, "R": 30 }
+      },
+      {
+        "text": "I want to solve problems and figure out complex ideas",
+        "scores": { "G": 70, "S": 30 }
+      },
+      {
+        "text": "I want to bounce ideas off others and try new things to satisfy my curiosity",
+        "scores": { "R": 70, "T": 30 }
+      },
+      {
+        "text": "I want to lead and create with confidence \u2014 knowledge is power",
+        "scores": { "S": 70, "G": 30 }
+      }
+    ]
+  },
+  {
+    "question": "What motivates you to fight?",
+    "options": [
+      { "text": "To protect and support the people I care about", "scores": { "T": 70, "S": 30 } },
+      { "text": "When something\u2019s inefficient or just wrong", "scores": { "G": 70, "T": 30 } },
+      { "text": "To inspire, energize, and shake things up", "scores": { "R": 70, "S": 30 } },
+      { "text": "To win", "scores": { "S": 70, "G": 30 } }
+    ]
+  },
+  {
+    "question": "What would you say is your biggest personality flaw?",
+    "options": [
+      {
+        "text": "I get so caught up in helping others that I forget to take care of myself",
+        "scores": { "T": 100 }
+      },
+      { "text": "I can start overthinking things", "scores": { "G": 100 } },
+      {
+        "text": "I bounce between too many ideas or commitments and struggle to finish things",
+        "scores": { "R": 100 }
+      },
+      {
+        "text": "I can come off as impatient or too intense when I really care about something",
+        "scores": { "S": 100 }
+      }
+    ]
+  },
+  {
+    "question": "What\u2019s your idea of a perfect day?",
+    "options": [
+      {
+        "text": "A slow morning, meaningful conversations, and a long walk by the beach",
+        "scores": { "T": 100 }
+      },
+      {
+        "text": "Working late into the night on my favorite project",
+        "scores": { "G": 80, "R": 20 }
+      },
+      { "text": "Waking up somewhere new and hanging out with my friends", "scores": { "R": 100 } },
+      {
+        "text": "Crushing a big goal I\u2019ve been working towards for weeks and treating my friends to dinner after",
+        "scores": { "S": 80, "T": 20 }
+      }
+    ]
+  },
+  {
+    "question": "What\u2019s your ideal room decor?",
+    "options": [
+      {
+        "text": "Soft lights, cozy blankets, my favorite vinyls and books",
+        "scores": { "T": 100 }
+      },
+      {
+        "text": "Clean lines, shelves full of books and gadgets, and a high-tech setup",
+        "scores": { "G": 100 }
+      },
+      {
+        "text": "Colorful art, vivid and bright lighting, and a box of snacks by my desk",
+        "scores": { "R": 100 }
+      },
+      {
+        "text": "Dark furniture, a huge whiteboard, and workout gear in the corner",
+        "scores": { "S": 100 }
+      }
+    ]
+  },
+  {
+    "question": "If you were to end up on a deserted island, what would you take?",
+    "options": [
+      { "text": "A survival handbook", "scores": { "G": 100 } },
+      { "text": "A fire starter", "scores": { "S": 100 } },
+      { "text": "A tent", "scores": { "T": 100 } },
+      { "text": "A huge box of snacks", "scores": { "R": 100 } }
+    ]
+  },
+  {
+    "question": "Choose a Stuart art exhibit!",
+    "options": [
+      { "text": "The Silent, Whispering and Talking Trees", "scores": { "G": 100 } },
+      { "text": "What Hath God Wrought", "scores": { "S": 100 } },
+      { "text": "The Bear", "scores": { "R": 100 } },
+      { "text": "Fallen Star", "scores": { "T": 100 } }
+    ]
+  }
+]

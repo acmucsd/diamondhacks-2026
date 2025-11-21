@@ -1,6 +1,8 @@
 import Typography from '@/components/Typography';
 import styles from './style.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
+// import Arrow from '../../../public/assets/material-symbols_arrow-right-alt.svg';
 const SortingQuizSection: React.FC = () => {
   return (
     <div className={styles.container}>
@@ -16,6 +18,7 @@ const SortingQuizSection: React.FC = () => {
         <div>
           <Link href="/sorting-quiz" className={styles.ctaButton}>
             Take the Sorting Quiz
+            {/* <Arrow className={styles.arrow} /> */}
           </Link>
         </div>
       </Typography>
