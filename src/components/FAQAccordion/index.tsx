@@ -16,10 +16,17 @@ interface FAQAccordionProps {
 
 export default function FAQ({ data }: FAQAccordionProps) {
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
+  const maxExpandedFAQ = 1;
 
   const handleChange = (panelIndex: number) => (_e: React.SyntheticEvent, newExpanded: boolean) => {
     if (newExpanded) {
-      setExpandedIndices([...expandedIndices, panelIndex]);
+      setExpandedIndices(prevIndices => {
+        const updatedIndices = [...prevIndices, panelIndex];
+        if (updatedIndices.length > maxExpandedFAQ) {
+          updatedIndices.shift();
+        }
+        return updatedIndices;
+      });
     } else {
       setExpandedIndices(expandedIndices.filter(index => index !== panelIndex));
     }
