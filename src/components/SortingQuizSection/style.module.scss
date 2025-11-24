@@ -63,18 +63,15 @@
     padding: 0.5rem 1rem;
   }
 
-  // TODO: add back later?
-  // .arrow {
-  //   width: 31px;
-  //   height: 31px;
-  //   vertical-align: middle;
-  //   margin-left: 10px;
+  .arrow {
+    width: 31px;
+    height: 31px;
+    margin-left: 10px;
+    vertical-align: middle;
 
-  //   @media screen and (max-width: vars.$breakpoint-md) {
-  //     width: 15.5px;
-  //     height: 15.5px;
-  //     margin-left: 5px;
-  //     display: inline-block;
-  //   }
-  // }
+    @media screen and (max-width: vars.$breakpoint-xl) {
+      transform: scale(0.5);
+      margin-left: 0px;
+    }
+  }
 }
