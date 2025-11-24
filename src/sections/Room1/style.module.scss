@@ -23,6 +23,7 @@
   flex-shrink: 0;
   background: radial-gradient(33.86% 33.86% at 26.75% 67.13%, #ffaf8a 0%, #696f78 100%);
   padding-bottom: 25rem;
+  overflow: hidden;
 
   @media screen and (max-width: vars.$breakpoint-md) {
     margin: 0 0.5rem 0 0.5rem;
@@ -35,4 +36,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 120%;
+  }
 }
