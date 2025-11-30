@@ -1,9 +1,13 @@
 @use '../../styles/vars.scss' as vars;
 
+.header {
+
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3rem;
+  padding-bottom: 6rem;
   gap: 2.375rem;
   z-index: 10;
 
