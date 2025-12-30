@@ -1,11 +1,8 @@
 @use '../../styles/vars.scss' as vars;
 
-.header {
-
-}
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 3rem;
   padding-bottom: 6rem;
   gap: 2.375rem;
@@ -43,6 +40,11 @@
 
   .emphasis {
     color: vars.$light-blue;
+  }
+
+  .carouselContainer {
+    width: auto;
+    overflow: hidden;
   }
 
   .description {
