@@ -16,6 +16,8 @@ const AboutDescription: React.FC = () => {
         <span className={styles.title}>
           What is <span className={styles.diamond}>DiamondHacks</span>?
         </span>
+      </div>
+      <div className={styles.carouselContainer}>
         <Carousel images={images} />
       </div>
       <div className={styles.description}>
