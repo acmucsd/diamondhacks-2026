@@ -1,7 +1,7 @@
 import Typography from '@/components/Typography';
 import Link from 'next/link';
 import styles from './style.module.scss';
-
+import Arrow from '../../../public/assets/material-symbols_arrow-right-alt.svg';
 interface LandingTextProps {
   className?: string;
 }
@@ -31,9 +31,10 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
           <Link
             href="https://acmurl.com/diamondhacks26-interest"
             target="_blank"
-            className={styles.button}
+            className={`${styles.button} ${styles.interestFormButton}`}
           >
             Interest Form
+            <Arrow className={styles.arrow} />
           </Link>
           <Link
             href="mailto:hackathon@acmucsd.org"

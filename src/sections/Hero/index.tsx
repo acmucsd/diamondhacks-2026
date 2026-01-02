@@ -5,9 +5,10 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.roofWrapper}>
-        <div className={styles.roofTop} />
+        <div className={styles.roofTop}>
+          <LandingText className={styles.landingText} />
+        </div>
         <SunGodImage className={styles.sunGod} />
-        <LandingText className={styles.landingText} />
       </div>
     </div>
   );
