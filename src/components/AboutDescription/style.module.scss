@@ -46,6 +46,28 @@
   .carouselContainer {
     width: auto;
     overflow: hidden;
+    .isDesktop {
+      margin: 0 calc(-1 * vars.$side-padding);
+      width: calc(100% + 2 * vars.$side-padding);
+    }
+
+    .isMobile {
+      display: none;
+    }
+
+    @media screen and (max-width: vars.$breakpoint-md) {
+      gap: 3.25rem;
+
+      .isMobile {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .isDesktop {
+        display: none;
+      }
+    }
   }
 
   .description {
