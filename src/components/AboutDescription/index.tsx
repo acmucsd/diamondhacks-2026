@@ -1,6 +1,7 @@
 import Typography from '@/components/Typography';
 import styles from './style.module.scss';
 import Carousel from '../Carousel';
+import ImagePicker from '../ImagePicker';
 
 const AboutDescription: React.FC = () => {
   const images: string[] = [
@@ -18,7 +19,12 @@ const AboutDescription: React.FC = () => {
         </span>
       </div>
       <div className={styles.carouselContainer}>
-        <Carousel images={images} />
+        <div className={styles.isDesktop}>
+          <Carousel images={images} />
+        </div>
+        <div className={styles.isMobile}>
+          <ImagePicker images={images} />
+        </div>
       </div>
       <div className={styles.description}>
         <Typography className={styles.info} variant="body/medium">
