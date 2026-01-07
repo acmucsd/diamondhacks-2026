@@ -15,17 +15,26 @@
   }
   .subheadingMobile {
     display: none;
-    font-size: 1rem !important;
-    line-height: 1.5rem !important;
+    font-size: 1.5rem !important;
     flex-direction: column;
   }
-  @media screen and (max-width: vars.$breakpoint-md) {
+
+  @media screen and (max-width: vars.$breakpoint-xl) {
     .subheadingDesktop {
       display: none;
+      font-size: 1rem !important;
     }
 
     .subheadingMobile {
       display: flex;
+      line-height: 2.25rem !important;
+    }
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    .subheadingMobile {
+      font-size: 1rem !important;
+      line-height: 1.5rem !important;
     }
   }
 
@@ -41,6 +50,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: vars.$breakpoint-xl) {
+      font-size: 3rem !important;
+    }
+
     @media screen and (max-width: vars.$breakpoint-md) {
       font-size: 1.75rem !important;
     }
@@ -67,11 +81,11 @@
     flex-direction: column;
     gap: 1rem;
 
-    .subtitle {
-      @media screen and (max-width: vars.$breakpoint-md) {
-        font-size: 1rem !important;
-      }
-    }
+    // .subtitle {
+    //   @media screen and (max-width: vars.$breakpoint-md) {
+    //     font-size: 1rem !important;
+    //   }
+    // }
 
     .buttonContainer {
       display: flex;
@@ -104,11 +118,20 @@
             0px 1px 3px 1px rgba(0, 0, 0, 0.15);
           opacity: 92%;
         }
+
         @media screen and (max-width: vars.$breakpoint-md) {
           font-size: 0.85rem;
           padding: 5px 12px;
         }
       }
+
+      .interestFormButton {
+        padding-right: 16px;
+        @media screen and (max-width: vars.$breakpoint-md) {
+          padding-right: 0px;
+        }
+      }
+
       @media screen and (max-width: vars.$breakpoint-lg) {
         justify-content: center;
       }
@@ -123,5 +146,19 @@
     text-align: center;
     flex-shrink: 0; // Prevent shrinking in flexbox
     min-height: fit-content; // Ensure it maintains its content height
+  }
+}
+
+.arrow {
+  width: 31px;
+  height: 31px;
+  transform: scale(0.9) translateY(-6px);
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-bottom: -8px;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    transform: scale(0.45) translateY(-10px);
+    margin-left: -5px;
   }
 }
