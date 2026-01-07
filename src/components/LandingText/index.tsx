@@ -24,16 +24,13 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
         </Typography>
       </div>
       <div className={styles.interestForm}>
-        {/* <Typography variant="title/small" className={styles.subtitle}>
-          Interested in joining? Fill out the interest form!
-        </Typography> */}
         <div className={styles.buttonContainer}>
           <Link
-            href="https://acmurl.com/diamondhacks26-interest"
+            href="https://portal.diamondhacks.acmucsd.com"
             target="_blank"
             className={`${styles.button} ${styles.interestFormButton}`}
           >
-            Interest Form
+            Apply Now
             <Arrow className={styles.arrow} />
           </Link>
           <Link
