@@ -2,8 +2,10 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 3rem;
+  padding-bottom: 6rem;
+  margin-bottom: 4.5rem;
   gap: 2.375rem;
   z-index: 10;
 
@@ -39,6 +41,33 @@
 
   .emphasis {
     color: vars.$light-blue;
+  }
+
+  .carouselContainer {
+    width: auto;
+    overflow: hidden;
+    .isDesktop {
+      margin: 0 calc(-1 * vars.$side-padding);
+      width: calc(100% + 2 * vars.$side-padding);
+    }
+
+    .isMobile {
+      display: none;
+    }
+
+    @media screen and (max-width: vars.$breakpoint-md) {
+      gap: 3.25rem;
+
+      .isMobile {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .isDesktop {
+        display: none;
+      }
+    }
   }
 
   .description {
