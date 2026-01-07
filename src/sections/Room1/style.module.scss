@@ -40,4 +40,5 @@
   @media screen and (max-width: vars.$breakpoint-md) {
     width: 120%;
   }
+  pointer-events: none;
 }
