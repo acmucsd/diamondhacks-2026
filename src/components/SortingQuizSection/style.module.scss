@@ -19,15 +19,11 @@
   @media screen and (max-width: vars.$breakpoint-lg) {
     bottom: 4vw;
     gap: 0.75rem;
-    transform: scale(tan(atan2(100vw, 800px)));
-    transform-origin: bottom right;
   }
   @media screen and (max-width: vars.$breakpoint-md) {
-    bottom: 10vw;
+    bottom: 40vw;
     gap: 0.5rem;
     right: 5vw;
-    transform: scale(tan(atan2(100vw, 500px)));
-    transform-origin: bottom right;
   }
 }
 .textSpacing {
