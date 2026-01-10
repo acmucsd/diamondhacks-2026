@@ -4,6 +4,7 @@ import '@/styles/globals.scss';
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import localFont from 'next/font/local';
+import { Analytics } from '@vercel/analytics/next';
 
 const dmSans = DM_Sans({ subsets: ['latin'] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

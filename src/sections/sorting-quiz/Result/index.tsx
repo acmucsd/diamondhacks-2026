@@ -4,6 +4,8 @@ import styles from './style.module.scss';
 import DynamicSVG from '@/components/sorting-quiz/DynamicSvg';
 import Link from 'next/link';
 import Typography from '@/components/Typography';
+import { track } from '@vercel/analytics';
+import { useEffect } from 'react';
 
 const images = { G: 'geisel-icon', R: 'raccoon-icon', S: 'sun-god-icon', T: 'triton-icon' };
 
@@ -14,6 +16,13 @@ interface ResultProps {
 const Result: React.FC<ResultProps> = ({ house }) => {
   const { name, nature, description } = results[house];
   const imageName = images[house];
+
+  useEffect(() => {
+    track('house_selected', {
+      house: name,
+      house_code: house,
+    });
+  }, [house, name]);
 
   return (
     <div className={styles.container}>

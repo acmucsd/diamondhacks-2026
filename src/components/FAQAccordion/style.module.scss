@@ -41,7 +41,7 @@
 }
 
 .accordionSummary {
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
   flex-direction: row-reverse;
 
   :global(.MuiAccordionSummary-content) {
@@ -73,6 +73,7 @@
 
   @media screen and (max-width: vars.$breakpoint-md) {
     padding: 1rem 0;
+    font-size: 1rem !important;
   }
 }
 
@@ -80,6 +81,10 @@
   background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem;
   color: vars.$white;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 0.75rem !important;
+  }
 
   a {
     color: vars.$blue;
