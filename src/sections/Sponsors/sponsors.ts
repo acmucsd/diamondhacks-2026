@@ -6,6 +6,14 @@ interface Sponsor {
 
 export const SPONSORS: Sponsor[] = [
   {
+    name: 'Pure Buttons',
+    logo: 'purebuttons.png',
+    link: 'https://www.purebuttons.com/',
+  },
+];
+
+export const PAST_SPONSORS: Sponsor[] = [
+  {
     name: 'StandOut Stickers',
     logo: 'standoutstickers.png',
     link: 'https://www.standoutstickers.com/',
