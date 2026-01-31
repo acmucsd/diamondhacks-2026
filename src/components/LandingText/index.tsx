@@ -11,7 +11,7 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
     <div className={`${className} ${styles.container}`}>
       <div className={styles.textContent}>
         <Typography variant="title/small" className={styles.subheadingDesktop}>
-          Spring 2026 • hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
+          April 4-5, 2026 • hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
         </Typography>
         <Typography variant="title/small" className={styles.subheadingMobile}>
           <span>April 4–5, 2026</span>
