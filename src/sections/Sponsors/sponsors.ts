@@ -4,7 +4,43 @@ interface Sponsor {
   link: string;
 }
 
-export const SPONSORS: Sponsor[] = [
+export const GOLD_SPONSORS: Sponsor[] = [
+  {
+    name: 'Browser Use',
+    logo: 'browser-use.svg',
+    link: 'https://www.browser-use.com/',
+  },
+  {
+    name: 'Fetch AI',
+    logo: 'fetchai.svg',
+    link: 'https://fetch.ai/',
+  }
+];
+
+export const BRONZE_SPONSORS: Sponsor[] = [
+  {
+    name: 'Twelve Labs',
+    logo: 'twelvelabs.png',
+    link: 'https://www.twelvelabs.io/',
+  },
+];
+
+export const NORMAL_SPONSORS: Sponsor[] = [
+  {
+    name: 'Perplexity',
+    logo: 'perplexity.svg',
+    link: 'https://www.perplexity.ai/',
+  },
+  {
+    name: 'Lovable',
+    logo: 'lovable.png',
+    link: 'https://www.lovable.dev/',
+  },
+  {
+    name: 'MLH',
+    logo: 'mlh.svg',
+    link: 'https://mlh.io/',
+  },
   {
     name: 'Pure Buttons',
     logo: 'purebuttons.png',

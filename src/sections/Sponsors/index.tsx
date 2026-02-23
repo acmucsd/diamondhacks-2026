@@ -2,7 +2,7 @@ import Typography from '@/components/Typography';
 import styles from './style.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import { PAST_SPONSORS, SPONSORS } from './sponsors';
+import { BRONZE_SPONSORS, GOLD_SPONSORS, NORMAL_SPONSORS } from './sponsors';
 
 const Sponsors: React.FC = () => {
   return (
@@ -12,28 +12,38 @@ const Sponsors: React.FC = () => {
           Thank you to our sponsors!
         </Typography>
         <div className={styles.sponsorLogos}>
-          {SPONSORS.map(sponsor => (
-            <Link href={sponsor.link} key={sponsor.name}>
+          {GOLD_SPONSORS.map(sponsor => (
+            <Link href={sponsor.link} key={sponsor.name} target="_blank" rel="noopener noreferrer">
               <Image
                 src={`/sponsors/new/${sponsor.logo}`}
                 alt={sponsor.name}
-                className={styles.sponsorLogo}
+                className={`${styles.sponsorLogo} ${styles.goldSponsorLogo}`}
                 width={200}
                 height={100}
               />
             </Link>
           ))}
         </div>
-        <Typography variant="display/heavy/small" className={styles.title}>
-          Past sponsors
-        </Typography>
         <div className={styles.sponsorLogos}>
-          {PAST_SPONSORS.map(sponsor => (
-            <Link href={sponsor.link} key={sponsor.name}>
+          {BRONZE_SPONSORS.map(sponsor => (
+            <Link href={sponsor.link} key={sponsor.name} target="_blank" rel="noopener noreferrer">
               <Image
-                src={`/sponsors/old/${sponsor.logo}`}
+                src={`/sponsors/new/${sponsor.logo}`}
                 alt={sponsor.name}
-                className={styles.sponsorLogo}
+                className={`${styles.sponsorLogo} ${styles.bronzeSponsorLogo}`}
+                width={200}
+                height={100}
+              />
+            </Link>
+          ))}
+        </div>
+        <div className={styles.sponsorLogos}>
+          {NORMAL_SPONSORS.map(sponsor => (
+            <Link href={sponsor.link} key={sponsor.name} target="_blank" rel="noopener noreferrer">
+              <Image
+                src={`/sponsors/new/${sponsor.logo}`}
+                alt={sponsor.name}
+                className={`${styles.sponsorLogo} ${styles[sponsor.name.toLowerCase()]}`}
                 width={200}
                 height={100}
               />

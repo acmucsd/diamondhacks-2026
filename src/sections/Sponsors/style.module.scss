@@ -44,11 +44,22 @@
 }
 
 .sponsorLogo {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 40px;
   border-radius: 10px;
-  background-color: vars.$white;
   padding: 1rem;
+}
+
+.goldSponsorLogo {
+  height: 90px;
+}
+
+.lovable {
+  height:25px;
+}
+
+.bronzeSponsorLogo {
+  height: 80px;
 }
 
 .button {
