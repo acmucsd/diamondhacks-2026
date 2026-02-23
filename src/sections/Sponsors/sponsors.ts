@@ -14,7 +14,7 @@ export const GOLD_SPONSORS: Sponsor[] = [
     name: 'Fetch AI',
     logo: 'fetchai.svg',
     link: 'https://fetch.ai/',
-  }
+  },
 ];
 
 export const BRONZE_SPONSORS: Sponsor[] = [
