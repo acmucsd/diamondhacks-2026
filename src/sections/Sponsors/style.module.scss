@@ -48,18 +48,30 @@
   height: 40px;
   border-radius: 10px;
   padding: 1rem;
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    height: 20px;
+  }
 }
 
 .goldSponsorLogo {
   height: 90px;
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    height: 45px;
+  }
 }
 
 .lovable {
   height: 25px;
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    height: 12.5px;
+  }
 }
 
 .bronzeSponsorLogo {
   height: 80px;
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    height: 40px;
+  }
 }
 
 .button {
