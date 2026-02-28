@@ -67,6 +67,13 @@
   }
 }
 
+.ucsdcse {
+  height: 120px;
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    height: 70px;
+  }
+}
+
 .bronzeSponsorLogo {
   height: 80px;
   @media screen and (max-width: vars.$breakpoint-lg) {
