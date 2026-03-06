@@ -15,6 +15,11 @@ export const GOLD_SPONSORS: Sponsor[] = [
     logo: 'fetchai.svg',
     link: 'https://fetch.ai/',
   },
+  {
+    name: 'UCSD CSE',
+    logo: 'ucsd_cse.svg',
+    link: 'https://cse.ucsd.edu/',
+  },
 ];
 
 export const BRONZE_SPONSORS: Sponsor[] = [
