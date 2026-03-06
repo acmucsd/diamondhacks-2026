@@ -17,7 +17,9 @@ const Sponsors: React.FC = () => {
               <Image
                 src={`/sponsors/new/${sponsor.logo}`}
                 alt={sponsor.name}
-                className={`${styles.sponsorLogo} ${styles.goldSponsorLogo} ${styles[sponsor.name.toLowerCase().replace(/\s/g, '')]}`}
+                className={`${styles.sponsorLogo} ${styles.goldSponsorLogo} ${
+                  styles[sponsor.name.toLowerCase().replace(/\s/g, '')]
+                }`}
                 width={200}
                 height={100}
               />
@@ -30,7 +32,9 @@ const Sponsors: React.FC = () => {
               <Image
                 src={`/sponsors/new/${sponsor.logo}`}
                 alt={sponsor.name}
-                className={`${styles.sponsorLogo} ${styles.bronzeSponsorLogo} ${styles[sponsor.name.toLowerCase().replace(/\s/g, '')]}`}
+                className={`${styles.sponsorLogo} ${styles.bronzeSponsorLogo} ${
+                  styles[sponsor.name.toLowerCase().replace(/\s/g, '')]
+                }`}
                 width={200}
                 height={100}
               />
@@ -43,7 +47,9 @@ const Sponsors: React.FC = () => {
               <Image
                 src={`/sponsors/new/${sponsor.logo}`}
                 alt={sponsor.name}
-                className={`${styles.sponsorLogo} ${styles[sponsor.name.toLowerCase().replace(/\s/g, '')]}`}
+                className={`${styles.sponsorLogo} ${
+                  styles[sponsor.name.toLowerCase().replace(/\s/g, '')]
+                }`}
                 width={200}
                 height={100}
               />
