@@ -73,9 +73,9 @@ a:has(.ucsdcse) {
 }
 
 .ucsdcse {
-  height: 120px;
+  height: 140px;
   @media screen and (max-width: vars.$breakpoint-lg) {
-    height: 70px;
+    height: 80px;
   }
 }
 
