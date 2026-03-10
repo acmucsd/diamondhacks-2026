@@ -67,10 +67,15 @@
   }
 }
 
+a:has(.ucsdcse) {
+  display: block;
+  width: 100%;
+}
+
 .ucsdcse {
-  height: 140px;
+  height: 120px;
   @media screen and (max-width: vars.$breakpoint-lg) {
-    height: 80px;
+    height: 70px;
   }
 }
 
