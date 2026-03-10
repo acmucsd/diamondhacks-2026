@@ -13,12 +13,12 @@ export const GOLD_SPONSORS: Sponsor[] = [
   {
     name: 'Browser Use',
     logo: 'browser-use.svg',
-    link: 'https://www.browser-use.com/',
+    link: 'https://browser-use.com/?utm_source=diamondhacks',
   },
   {
     name: 'Fetch AI',
     logo: 'fetchai.svg',
-    link: 'https://fetch.ai/',
+    link: 'https://fetch.ai/?utm_source=diamondhacks2026&utm_medium=direct&utm_campaign=hackathon',
   },
 ];
 
