@@ -30,7 +30,7 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
             target="_blank"
             className={`${styles.button} ${styles.interestFormButton}`}
           >
-            Apply Now
+            Sign In
             <Arrow className={styles.arrow} />
           </Link>
           <Link
