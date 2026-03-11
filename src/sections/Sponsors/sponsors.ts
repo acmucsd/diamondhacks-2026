@@ -6,26 +6,31 @@ interface Sponsor {
 
 export const GOLD_SPONSORS: Sponsor[] = [
   {
+    name: 'UCSD CSE',
+    logo: 'ucsd_cse.svg',
+    link: 'https://cse.ucsd.edu/',
+  },
+  {
     name: 'Browser Use',
     logo: 'browser-use.svg',
-    link: 'https://www.browser-use.com/',
+    link: 'https://browser-use.com/?utm_source=diamondhacks',
   },
   {
     name: 'Fetch AI',
     logo: 'fetchai.svg',
-    link: 'https://fetch.ai/',
-  },
-  {
-    name: 'UCSD CSE',
-    logo: 'ucsd_cse.svg',
-    link: 'https://cse.ucsd.edu/',
+    link: 'https://fetch.ai/?utm_source=diamondhacks2026&utm_medium=direct&utm_campaign=hackathon',
   },
 ];
 
 export const BRONZE_SPONSORS: Sponsor[] = [
   {
+    name: 'Qualcomm',
+    logo: 'qualcomm.svg',
+    link: 'https://www.qualcomm.com/',
+  },
+  {
     name: 'Twelve Labs',
-    logo: 'twelvelabs.png',
+    logo: 'twelvelabs.svg',
     link: 'https://www.twelvelabs.io/',
   },
 ];
@@ -50,6 +55,11 @@ export const NORMAL_SPONSORS: Sponsor[] = [
     name: 'Pure Buttons',
     logo: 'purebuttons.png',
     link: 'https://www.purebuttons.com/',
+  },
+  {
+    name: 'JellyJelly',
+    logo: 'jellyjelly.svg',
+    link: 'https://www.jellyjelly.com/',
   },
 ];
 
