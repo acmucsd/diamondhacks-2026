@@ -30,7 +30,7 @@ export const BRONZE_SPONSORS: Sponsor[] = [
   },
   {
     name: 'Twelve Labs',
-    logo: 'twelvelabs.png',
+    logo: 'twelvelabs.svg',
     link: 'https://www.twelvelabs.io/',
   },
 ];
