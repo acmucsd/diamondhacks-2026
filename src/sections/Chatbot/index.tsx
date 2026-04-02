@@ -14,12 +14,14 @@ export default function Chatbot() {
             details, logistics, and what to bring. Access it through ASI:One, powered by Agentverse.
           </p>
           <div className={styles.actions}>
-            <button
+            <a
+              href="https://www.fetch.ai/diamondhacks2026"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.button}
-              onClick={() => window.open('https://www.fetch.ai/diamondhacks2026', '_blank')}
             >
               Chat with the DiamondHacks Agent
-            </button>
+            </a>
           </div>
         </div>
 

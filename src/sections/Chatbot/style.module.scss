@@ -66,15 +66,23 @@
 }
 
 .button {
+  display: inline-block;
   background: linear-gradient(90deg, #5b8bff, #6cf0ff);
   color: #042028;
   border: none;
-  padding: 14px 24px; // was 10px 18px
+  padding: 14px 24px;
   border-radius: 999px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 18px; // added
+  font-size: 18px;
   box-shadow: 0 6px 18px rgba(88, 120, 255, 0.18);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
   @media screen and (max-width: vars.$breakpoint-md) {
     width: 100%;
     font-size: 16px;
