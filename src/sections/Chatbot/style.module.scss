@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.card {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1280px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+.left {
+  flex: 1.1;
+  color: #eee;
+}
+
+.title {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.desc {
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+  color: #d7d7d7;
+  font-size: 19px;
+}
+
+.actions {
+  margin-top: 8px;
+}
+
+.button {
+  background: linear-gradient(90deg,#5b8bff,#6cf0ff);
+  color: #042028;
+  border: none;
+  padding: 14px 24px; // was 10px 18px
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px; // added
+  box-shadow: 0 6px 18px rgba(88,120,255,0.18);
+}
+
+.preview {
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoFrame {
+  width: 100%;
+  min-height: 140px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #bfe9ff20, #7aa8ff12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logoSvg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
