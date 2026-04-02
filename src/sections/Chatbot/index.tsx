@@ -16,7 +16,7 @@ export default function Chatbot() {
           <div className={styles.actions}>
             <button
               className={styles.button}
-              onClick={() => window.open('https://asi.one', '_blank')}
+              onClick={() => window.open('https://www.fetch.ai/diamondhacks2026', '_blank')}
             >
               Chat with the DiamondHacks Agent
             </button>
