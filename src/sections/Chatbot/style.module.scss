@@ -70,11 +70,12 @@
   background: linear-gradient(90deg, #5b8bff, #6cf0ff);
   color: #042028;
   border: none;
-  padding: 14px 24px;
+  padding: 12px 20px;
   border-radius: 999px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
+  box-sizing: border-box;
   box-shadow: 0 6px 18px rgba(88, 120, 255, 0.18);
   text-decoration: none;
   transition: transform 0.2s ease;
@@ -85,8 +86,8 @@
 
   @media screen and (max-width: vars.$breakpoint-md) {
     width: 100%;
-    font-size: 16px;
-    padding: 14px 16px;
+    font-size: 15px;
+    padding: 12px 14px;
   }
 }
 
