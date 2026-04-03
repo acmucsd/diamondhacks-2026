@@ -1,0 +1,126 @@
+@use '../../styles/vars.scss' as vars;
+
+.wrapper {
+  width: 70%;
+  max-width: 1000px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: #22272d;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 90%;
+  }
+}
+
+.card {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  width: calc(100% - 2.6rem);
+  margin: 1.54rem 1.52rem 1.24rem 1.52rem;
+  border-radius: 16px;
+  padding: 28px;
+  background: radial-gradient(37.46% 37.46% at 71.81% 62.54%, #4f5660 0%, #5c6269 100%);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  @media screen and (max-width: vars.$breakpoint-md) {
+    flex-direction: column;
+    gap: 16px;
+    width: calc(100% - 1.4rem);
+    margin: 0.7rem;
+    padding: 20px;
+    border-radius: 14px;
+  }
+}
+
+.left {
+  flex: 1.1;
+  color: #eee;
+}
+
+.title {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 28px;
+  }
+}
+
+.desc {
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+  color: #d7d7d7;
+  font-size: 19px;
+  @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 17px;
+  }
+}
+
+.actions {
+  margin-top: 8px;
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(90deg, #5b8bff, #6cf0ff);
+  color: #042028;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(88, 120, 255, 0.18);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+}
+
+.preview {
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: vars.$breakpoint-md) {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.logoFrame {
+  width: 100%;
+  min-height: 140px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2f3742, #3a4451);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  @media screen and (max-width: vars.$breakpoint-md) {
+    min-height: 96px;
+    padding: 14px;
+  }
+}
+
+.logoSvg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
