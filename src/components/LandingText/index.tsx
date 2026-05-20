@@ -22,7 +22,7 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
         <Typography className={styles.header} variant="display/heavy/large">
           DiamondHacks 2026
         </Typography>
-        <Typography variant="title/small">
+        <Typography className={styles.closingText} variant="title/small">
           DiamondHacks has ended. Thanks for participating!
         </Typography>
       </div>
