@@ -22,15 +22,18 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
         <Typography className={styles.header} variant="display/heavy/large">
           DiamondHacks 2026
         </Typography>
+        <Typography className={styles.closingText} variant="title/small">
+          DiamondHacks has ended. Thanks for participating!
+        </Typography>
       </div>
       <div className={styles.interestForm}>
         <div className={styles.buttonContainer}>
           <Link
-            href="https://portal.diamondhacks.acmucsd.com"
+            href="https://forms.gle/h8apzbJacRi8caTx9"
             target="_blank"
             className={`${styles.button} ${styles.interestFormButton}`}
           >
-            Sign In
+            Interest Form
             <Arrow className={styles.arrow} />
           </Link>
           <Link
@@ -38,7 +41,7 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
             className={styles.button}
             data-variant="secondary"
           >
-            Sponsor us
+            Sponsor us for 2027
           </Link>
         </div>
       </div>

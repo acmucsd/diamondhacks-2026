@@ -60,6 +60,14 @@
     }
   }
 
+  .closingText {
+    font-size: 2.25rem;
+
+    @media screen and (max-width: vars.$breakpoint-md) {
+      font-size: 1rem !important;
+    }
+  }
+
   .gradient {
     background: linear-gradient(
       90deg,
