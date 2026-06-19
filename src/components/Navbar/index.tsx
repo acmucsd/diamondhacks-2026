@@ -93,7 +93,7 @@ export default function Navbar() {
           <Typography variant="body/large" className={styles.logoText}>
             <b>diamond</b>
             <br />
-            hacks 3.0
+            hacks 4.0
           </Typography>
         </div>
         <Typography variant="body/large" className={styles.desktopLinks}>

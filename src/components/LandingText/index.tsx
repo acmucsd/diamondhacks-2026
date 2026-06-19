@@ -11,19 +11,16 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
     <div className={`${className} ${styles.container}`}>
       <div className={styles.textContent}>
         <Typography variant="title/small" className={styles.subheadingDesktop}>
-          April 4-5, 2026 • hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
+          April 3-4, 2027 • hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
         </Typography>
         <Typography variant="title/small" className={styles.subheadingMobile}>
-          <span>April 4–5, 2026</span>
+          <span>April 3–4, 2027</span>
           <span>
             Hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
           </span>
         </Typography>
         <Typography className={styles.header} variant="display/heavy/large">
-          DiamondHacks 2026
-        </Typography>
-        <Typography className={styles.closingText} variant="title/small">
-          DiamondHacks has ended. Thanks for participating!
+          DiamondHacks 2027
         </Typography>
       </div>
       <div className={styles.interestForm}>

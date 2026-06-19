@@ -9,7 +9,7 @@ const MLHBanner: React.FC = () => {
       target="_blank"
     >
       <Image
-        src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-blue.svg"
+        src="https://logged-assets.s3.amazonaws.com/trust-badge/2027/mlh-trust-badge-2027-blue.svg"
         alt="Major League Hacking 2026 Hackathon Season"
         width={150}
         height={150}
