@@ -22,9 +22,6 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
         <Typography className={styles.header} variant="display/heavy/large">
           DiamondHacks 2027
         </Typography>
-        <Typography className={styles.closingText} variant="title/small">
-          Location: CSE Building, UCSD
-        </Typography>
       </div>
       <div className={styles.interestForm}>
         <div className={styles.buttonContainer}>
