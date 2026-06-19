@@ -14,7 +14,7 @@ const LandingText = ({ className = '' }: LandingTextProps) => {
           April 4-5, 2026 • hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
         </Typography>
         <Typography variant="title/small" className={styles.subheadingMobile}>
-          <span>April 4–5, 2026</span>
+          <span>April 3–4, 2027</span>
           <span>
             Hosted by <span className={styles.gradient}>ACM at UC San Diego</span>
           </span>
