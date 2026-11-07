@@ -1,5 +1,43 @@
 @use '../../styles/vars.scss' as vars;
 
+$ease-tear: cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin tear-clip($y, $x) {
+  clip-path: polygon(0 0, 100% 0, 100% $y, calc(100% - $x) 100%, 0 100%);
+}
+
+@mixin squiggle-widths {
+  @media screen and (max-width: vars.$breakpoint-md) {
+    width: 30px;
+  }
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    width: 15px;
+  }
+}
+
+%dashed-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.25) 0,
+    rgba(255, 255, 255, 0.25) 14px,
+    transparent 14px,
+    transparent 24px
+  );
+  z-index: 13;
+}
+
+%overlay-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #1f2129;
+  z-index: 10;
+}
+
 .container {
   position: relative;
   width: calc(100% + 2 * vars.$side-padding);
@@ -35,9 +73,13 @@
 
   @media screen and (max-width: vars.$breakpoint-md) {
     width: 15%;
-    max-width: 55px;
+    max-width: 90px;
     top: 8%;
     left: 4%;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    max-width: 55px;
   }
 }
 
@@ -51,8 +93,12 @@
 
   @media screen and (max-width: vars.$breakpoint-md) {
     width: 20%;
-    max-width: 80px;
+    max-width: 130px;
     bottom: 20%;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    max-width: 80px;
   }
 }
 
@@ -63,9 +109,9 @@
   width: 50px;
   z-index: 2;
   transform: scaleY(-1) rotate(80deg);
+  @include squiggle-widths;
 
   @media screen and (max-width: vars.$breakpoint-md) {
-    width: 15px;
     bottom: 30%;
     left: 12%;
   }
@@ -77,10 +123,7 @@
   right: 6%;
   width: 50px;
   z-index: 2;
-
-  @media screen and (max-width: vars.$breakpoint-md) {
-    width: 15px;
-  }
+  @include squiggle-widths;
 }
 
 .content {
@@ -112,6 +155,10 @@
   }
 
   @media screen and (max-width: vars.$breakpoint-md) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
     font-size: 0.75rem;
   }
 }
@@ -133,7 +180,7 @@
   }
 
   @media screen and (max-width: vars.$breakpoint-md) {
-    font-size: 3.5rem;
+    font-size: 6.5rem;
   }
 
   @media screen and (max-width: vars.$breakpoint-sm) {
@@ -150,17 +197,17 @@
   margin: 0.5rem 0 0;
   text-align: left;
 
-  @media screen and (max-width: vars.$breakpoint-md) {
-    margin: 0.1rem 0 0;
-  }
-
   @media screen and (max-width: vars.$breakpoint-lg) {
     font-size: 2rem;
   }
 
   @media screen and (max-width: vars.$breakpoint-md) {
+    margin: 0.1rem 0 0;
+    font-size: 1.75rem;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
     font-size: 1rem;
-    text-align: left;
   }
 }
 
@@ -173,13 +220,16 @@
   gap: 2rem;
   z-index: 1;
 
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    bottom: 35%;
+  }
+
   @media screen and (max-width: vars.$breakpoint-md) {
     gap: 0.5rem;
     bottom: 42%;
   }
 
   @media screen and (max-width: vars.$breakpoint-sm) {
-    gap: 0.5rem;
     bottom: 37%;
   }
 }
@@ -187,13 +237,13 @@
 .button {
   position: relative;
   display: inline-block;
-  padding: 10px 0px;
+  padding: 10px 0;
   min-width: 250px;
   text-align: center;
   background-color: #FFCB00;
   border-radius: 5px;
   border: 6px solid #fff;
-  box-shadow: 0px 0.9px 2.69px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.9px 2.69px rgba(0, 0, 0, 0.4);
   transform: rotate(-0.2deg);
   font-family: var(--font-londrina-solid);
   font-weight: 400;
@@ -206,10 +256,24 @@
   cursor: pointer;
   isolation: isolate;
 
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    min-width: 180px;
+    font-size: 1.5rem;
+    padding: 8px 0;
+    border: 4px solid #fff;
+  }
+
   @media screen and (max-width: vars.$breakpoint-md) {
+    min-width: 140px;
+    font-size: 1.1rem;
+    padding: 6px 0;
+    border: 3px solid #fff;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
     min-width: 80px;
     font-size: 0.75rem;
-    padding: 4px 0px;
+    padding: 4px 0;
     border: 2px solid #fff;
   }
 
@@ -224,4 +288,151 @@
     z-index: -1;
     pointer-events: none;
   }
+}
+
+.overlayTop {
+  @extend %overlay-bar;
+  top: 0;
+  height: 12%;
+}
+
+.overlayMiddle {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  right: 0;
+  bottom: 33%;
+  background: #2f323e;
+  z-index: 10;
+  will-change: transform;
+  @include tear-clip(10%, 170px);
+
+  &.tearAway {
+    animation: tearAway 1.8s $ease-tear forwards;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    @include tear-clip(10%, 112px);
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    @include tear-clip(20%, 118px);
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    @include tear-clip(30%, 55px);
+  }
+}
+
+.dashedTop {
+  @extend %dashed-line;
+  top: 12%;
+}
+
+.dashedBottom {
+  @extend %dashed-line;
+  bottom: 33%;
+}
+
+.overlayBottom {
+  @extend %overlay-bar;
+  bottom: 0;
+  height: 33%;
+}
+
+.flipCrease {
+  position: absolute;
+  bottom: 33%;
+  right: -10px;
+  height: 580px;
+  width: auto;
+  z-index: 11;
+  cursor: pointer;
+  pointer-events: auto;
+  transform: rotate(0deg);
+  will-change: transform;
+  transform-origin: bottom center;
+
+  &.tearAway {
+    animation: flipTearAway 1.8s $ease-tear forwards;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-lg) {
+    height: 400px;
+    right: -10px;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    right: -5px;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    height: 180px;
+    right: -2px;
+  }
+}
+
+.hiddenAbove {
+  translate: 0 -100vh;
+}
+
+.hiddenButtons {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slideInFromTop {
+  animation: slideInFromTop 0.8s cubic-bezier(0.25, 1.1, 0.5, 1) both;
+}
+
+.fadeIn {
+  animation: fadeIn 0.6s ease-out both;
+}
+
+.fadeOut {
+  animation: wipeRightToLeft 1.8s $ease-tear forwards;
+}
+
+.slideUp {
+  animation: slideUp 1.1s $ease-tear forwards;
+}
+
+.slideDown {
+  animation: slideDown 1.1s $ease-tear forwards;
+}
+
+@keyframes tearAway {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-110vw - 12rem)); }
+}
+
+@keyframes flipTearAway {
+  0% { transform: translateX(0) scaleY(1); }
+  100% { transform: translateX(calc(-110vw - 12rem)) scaleY(1.6); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(0); }
+  to { transform: translateY(100%); }
+}
+
+@keyframes slideInFromTop {
+  from { translate: 0 -100vh; }
+  to { translate: 0 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes wipeRightToLeft {
+  0% { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(0 100% 0 0); }
 }
