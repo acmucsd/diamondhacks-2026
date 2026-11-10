@@ -2,11 +2,18 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import '@/styles/globals.scss';
 import type { Metadata } from 'next';
-import { DM_Sans } from 'next/font/google';
+import { DM_Sans, Londrina_Solid } from 'next/font/google';
 import localFont from 'next/font/local';
 import { Analytics } from '@vercel/analytics/next';
 
 const dmSans = DM_Sans({ subsets: ['latin'] });
+
+const londrinaSolid = Londrina_Solid({
+  weight: ['400', '900'],
+  subsets: ['latin'],
+  variable: '--font-londrina-solid',
+  display: 'swap',
+});
 
 const jainiPurva = localFont({
   src: '../../public/fonts/JainiPurva-Regular.ttf',
@@ -25,8 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="theme-color" content="#151625" />
       </head>
-      <body className={`${dmSans.className} ${jainiPurva.variable}`}>
-        <Navbar />
+      <body className={`${dmSans.className} ${jainiPurva.variable} ${londrinaSolid.variable}`}>
+        {/* <Navbar /> */}
         {children}
         <Footer />
         <Analytics />
