@@ -130,3 +130,31 @@ a:has(.ucsdcse) {
     left: calc(-1 * vars.$side-padding-mobile - 10vw);
   }
 }
+
+.winnerGuy {
+  position: absolute;
+  top: -10.9vw;
+  right: calc(-1 * vars.$side-padding);
+  width: 17.86vw;
+  max-width: 270px;
+  z-index: 3;
+  pointer-events: none;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    right: calc(-1 * vars.$side-padding-mobile);
+  }
+}
+
+.redbullGuy {
+  position: absolute;
+  top: 17.5vw;
+  left: calc(-1 * vars.$side-padding);
+  width: 11.64vw;
+  max-width: 176px;
+  z-index: 3;
+  pointer-events: none;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    left: calc(-1 * vars.$side-padding-mobile);
+  }
+}

@@ -8,6 +8,8 @@ const Sponsors: React.FC = () => {
   return (
     <section className={styles.container} id="sponsors">
       <img src="/assets/graph-paper.svg" alt="" className={styles.graphPaper} />
+      <img src="/assets/winner-guy.svg" alt="" className={styles.winnerGuy} />
+      <img src="/assets/redbull-guy.svg" alt="" className={styles.redbullGuy} />
       <div className={styles.content}>
         <Typography variant="display/heavy/small" className={styles.title}>
           Thank you to our sponsors
