@@ -7,9 +7,10 @@ import { BRONZE_SPONSORS, GOLD_SPONSORS, NORMAL_SPONSORS } from './sponsors';
 const Sponsors: React.FC = () => {
   return (
     <section className={styles.container} id="sponsors">
+      <img src="/assets/graph-paper.svg" alt="" className={styles.graphPaper} />
       <div className={styles.content}>
         <Typography variant="display/heavy/small" className={styles.title}>
-          Thank you to our sponsors!
+          Thank you to our sponsors
         </Typography>
         <div className={styles.sponsorLogos}>
           {GOLD_SPONSORS.map(sponsor => (

@@ -7,8 +7,10 @@
   justify-content: flex-start;
   gap: 2rem;
   position: relative;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  z-index: 4;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  clip-path: inset(-100vw -100vw 0 -100vw);
 
   @media screen and (max-width: vars.$breakpoint-md) {
     padding-bottom: 5rem;
@@ -21,15 +23,18 @@
   justify-content: center;
   gap: 2rem;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   text-align: center;
 }
 
 .title {
-  @media screen and (max-width: vars.$breakpoint-md) {
-    font-size: 2.25rem !important;
-    line-height: 2.625rem !important;
-  }
+  font-family: var(--font-londrina-solid);
+  font-weight: 900 !important;
+  font-size: clamp(2.25rem, 5.12vw, 4.84rem) !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .sponsorLogos {
@@ -95,31 +100,6 @@ a:has(.ucsdcse) {
   display: inline-block;
 }
 
-.background {
-  position: absolute;
-  bottom: -10rem;
-  width: calc(100% + 2 * vars.$side-padding);
-  height: calc(100% + 17.5rem);
-  z-index: -1;
-  object-fit: cover;
-  object-position: bottom;
-
-  // Blend out the gradients into the background
-  mask-image: linear-gradient(
-    to bottom,
-    transparent,
-    black min(10%, 5rem),
-    black 95rem,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 5rem, black 95rem, transparent);
-
-  @media screen and (max-width: vars.$breakpoint-md) {
-    transform: scale(0.7);
-    width: calc((100% + 2 * vars.$side-padding-mobile) / 0.7);
-  }
-}
-
 .bottomText {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
@@ -133,5 +113,20 @@ a:has(.ucsdcse) {
   @media screen and (max-width: vars.$breakpoint-md) {
     font-size: 1rem !important;
     line-height: 1.25rem !important;
+  }
+}
+
+.graphPaper {
+  position: absolute;
+  top: -24vw;
+  left: calc(-1 * vars.$side-padding - 10vw);
+  width: 127vw;
+  height: auto;
+  transform: scaleY(-1);
+  z-index: 2;
+  pointer-events: none;
+
+  @media screen and (max-width: vars.$breakpoint-md) {
+    left: calc(-1 * vars.$side-padding-mobile - 10vw);
   }
 }
